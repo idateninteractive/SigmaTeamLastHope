@@ -1,24 +1,6 @@
-@import "tailwindcss";
-
-/* Minimalist custom styles for red and white design */
-@layer base {
-  body {
-    transition: background-color 0.4s ease, color 0.4s ease;
-  }
-}
-
-/* Custom scrollbar for beautiful red style */
-::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
-}
-::-webkit-scrollbar-track {
-  background: transparent;
-}
-::-webkit-scrollbar-thumb {
-  background: #dc2626;
-  border-radius: 3px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: #b91c1c;
+{
+  "name": "Wallpaper Admin Dashboard",
+  "description": "A minimalist red and white wallpaper web admin panel dashboard with login, image upload, and deletion features.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }
