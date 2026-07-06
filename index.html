@@ -266,6 +266,38 @@
                 <p>Welcome to Sigma Team website!<br>Alien Shooter World Steam Coming Soon</p>
             </div>
         </div>
+            <!-- Dark and Red Text Column (You can edit your main text here) -->
+            <div class="text-column">
+                 <p>    Chak's Temple!<br></p>
+            </div>
+<!-- Chak's Temple Section -->
+<div class="text-column" style="margin-top: 20px;">
+    <h2 style="color: #ff0000; margin-bottom: 10px; font-family: 'Orbitron', sans-serif;">Chak's Temple</h2>
+    <img src="http://www.pcspielekompass.de/images/screenshots/chakstemple/chakstemple8.jpg" alt="Chak's Temple Screenshot" style="width: 100%; border: 1px solid #ff0000; margin-bottom: 15px;">
+    
+    <!-- More Info Button -->
+    <button onclick="toggleDownload()" style="background: #ff0000; color: white; border: none; padding: 10px 20px; cursor: pointer; font-weight: bold; width: 100%; font-family: 'Rajdhani', sans-serif; font-size: 1.1rem;">
+        MORE INFO
+    </button>
+
+    <!-- Hidden Download Link -->
+    <div id="download-section" style="display: none; margin-top: 15px; text-align: center;">
+        <a href="https://www.myrealgames.com/files/chaks-temple.exe" style="color: #00ff00; text-decoration: none; font-weight: bold; border: 1px solid #00ff00; padding: 10px 20px; display: inline-block;">
+            DOWNLOAD GAME
+        </a>
+    </div>
+</div>
+
+<script>
+    function toggleDownload() {
+        var x = document.getElementById("download-section");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+</script>
 
         <!-- Footer -->
         <footer>
