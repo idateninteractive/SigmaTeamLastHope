@@ -1,1316 +1,365 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-56H2KC8Q');</script>
-<!-- End Google Tag Manager -->
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<link rel="shortcut icon" href="/favicon.ico" />
-	<link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png" />
-	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SigmaTeam | Free Games Download</title>
+    <!-- FontAwesome for Search and Social Media Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Base Themes and Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
 
-	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-	<link rel="apple-touch-icon" sizes="167x167" href="/apple-touch-icon-167x167.png" />
-	<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png" />
-	<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png" />
+        body {
+            background-color: #0d1117;
+            color: #ffffff;
+            line-height: 1.6;
+        }
 
-	<link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png" />
-	<meta name="csrf-param" content="_csrf-frontend">
-<meta name="csrf-token" content="KmvVdoUKTv_wYYVt8HOPAWPu-FiyP4HvMOP88MYDvORGLpEh4kUEjqc-wRqWHeRUO7vNMvF-tL5UlqSVpVWLuw==">
-<title>Free PC and Online Games at My Real Games!</title>			<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="original-source" content="https://www.myrealgames.com/">
-		<link rel="canonical" href="https://www.myrealgames.com/" />
-		<link rel="alternate" hreflang="x-default" href="https://www.myrealgames.com/" />
-		<link rel="alternate" hreflang="en" href="https://www.myrealgames.com/" />
-		<link rel="alternate" hreflang="ru" href="https://www.myrealgames.com/ru/" />
-		<link rel="alternate" hreflang="de" href="https://www.myrealgames.com/de/" />
-		<link rel="alternate" hreflang="fr" href="https://www.myrealgames.com/fr/" />
-		<link rel="alternate" hreflang="es" href="https://www.myrealgames.com/es/" />
-		<link rel="alternate" hreflang="it" href="https://www.myrealgames.com/it/" />
-		<link rel="alternate" hreflang="tr" href="https://www.myrealgames.com/tr/" />
-		<link rel="alternate" hreflang="cs" href="https://www.myrealgames.com/cz/" />
-		<link rel="alternate" hreflang="el" href="https://www.myrealgames.com/gr/" />
-		<link rel="alternate" hreflang="hu" href="https://www.myrealgames.com/hu/" />
-		<link rel="alternate" hreflang="pl" href="https://www.myrealgames.com/pl/" />
-		<link rel="alternate" hreflang="nl" href="https://www.myrealgames.com/nl/" />
-		<link rel="alternate" hreflang="sv" href="https://www.myrealgames.com/se/" />
-		<link rel="alternate" hreflang="hi" href="https://www.myrealgames.com/hi/" />
-		<link rel="alternate" hreflang="id" href="https://www.myrealgames.com/id/" />
-		<link rel="alternate" hreflang="ko" href="https://www.myrealgames.com/kr/" />
-		<link rel="alternate" hreflang="ja" href="https://www.myrealgames.com/jp/" />
-		<!--t1783526419r543-544-445-536f198.199.100.191-->	<meta name="keywords" content="Games">
-<meta name="description" content="Are you looking for the best free games to play online or download to your PC? Discover our vast selection of thrilling video games and unleash your inner gamer today!">
-<link href="https://cdn.myrealgames.com/minify/befdeb7c7d7e451b89f72725209ecc71ab0aa039.css" rel="stylesheet">	
+        a {
+            text-style: none;
+            text-decoration: none;
+            color: inherit;
+        }
 
+        /* Header / Navigation Bar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #161b22;
+            padding: 15px 4%;
+            border-bottom: 2px solid #21262d;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        /* Left Side: Logo */
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo-icon {
+            background: linear-gradient(45deg, #00d2ff, #0066ff);
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 20px;
+            color: #fff;
+        }
+
+        .logo-text {
+            font-size: 22px;
+            font-weight: 800;
+            letter-spacing: 1px;
+            background: linear-gradient(45deg, #fff, #8b949e);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Right Side: Search & Social Group */
+        .nav-right-group {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+
+        /* Search Option */
+        .search-box {
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+
+        .search-box input {
+            background-color: #0d1117;
+            border: 1px solid #30363d;
+            color: #fff;
+            padding: 8px 15px;
+            padding-right: 35px;
+            border-radius: 20px;
+            outline: none;
+            width: 200px;
+            transition: all 0.3s ease;
+        }
+
+        .search-box input:focus {
+            border-color: #0066ff;
+            width: 260px;
+            box-shadow: 0 0 8px rgba(0, 102, 255, 0.4);
+        }
+
+        .search-box i {
+            position: absolute;
+            right: 12px;
+            color: #8b949e;
+            cursor: pointer;
+        }
+
+        /* Social Media Options */
+        .social-icons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-icons a {
+            font-size: 18px;
+            color: #8b949e;
+            transition: color 0.2s ease, transform 0.2s ease;
+        }
+
+        .social-icons a:hover {
+            color: #00d2ff;
+            transform: translateY(-2px);
+        }
+
+        /* Hero Showcase Section */
+        .hero {
+            padding: 60px 4%;
+            text-align: center;
+            background: radial-gradient(circle at top, #1f293d 0%, #0d1117 70%);
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        .hero h1 span {
+            color: #00d2ff;
+        }
+
+        .hero p {
+            color: #8b949e;
+            font-size: 18px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Games Grid System */
+        .main-container {
+            padding: 20px 4% 60px 4%;
+        }
+
+        .section-title {
+            font-size: 24px;
+            margin-bottom: 25px;
+            border-left: 4px solid #0066ff;
+            padding-left: 10px;
+        }
+
+        .games-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        /* Game Card Styling */
+        .game-card {
+            background-color: #161b22;
+            border: 1px solid #21262d;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .game-card:hover {
+            transform: translateY(-5px);
+            border-color: #00d2ff;
+        }
+
+        .game-thumbnail {
+            width: 100%;
+            height: 180px;
+            background-color: #30363d;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            color: #8b949e;
+            position: relative;
+        }
+
+        /* Simulated background styles for thumbnails */
+        .thumb-1 { background: linear-gradient(135deg, #ff5e62, #ff9966); }
+        .thumb-2 { background: linear-gradient(135deg, #4286f4, #373b44); }
+        .thumb-3 { background: linear-gradient(135deg, #11998e, #38ef7d); }
+        .thumb-4 { background: linear-gradient(135deg, #7f00ff, #e100ff); }
+
+        .game-info {
+            padding: 20px;
+        }
+
+        .game-title {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .game-meta {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            color: #8b949e;
+            margin-bottom: 20px;
+        }
+
+        .badge-free {
+            background-color: rgba(56, 239, 125, 0.2);
+            color: #38ef7d;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+
+        .download-btn {
+            display: block;
+            text-align: center;
+            background: linear-gradient(45deg, #0066ff, #00d2ff);
+            color: #fff;
+            padding: 10px;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: opacity 0.2s;
+        }
+
+        .download-btn:hover {
+            opacity: 0.9;
+        }
+
+        /* Responsive Breakpoint */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+            .nav-right-group {
+                width: 100%;
+                flex-direction: column;
+                gap: 15px;
+            }
+            .search-box input {
+                width: 100%;
+            }
+            .search-box input:focus {
+                width: 100%;
+            }
+        }
+    </style>
 </head>
-<body class="">
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-56H2KC8Q"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-	<style>
-		#page-description-block a,
-		.desc-block a,
-		.block_description_t a {
-			color: #fc7c00 !important;
-			background: none !important;
-		}
+<body>
 
-		#page-description-block a:hover,
-		.block_description_t a:hover {
-			text-decoration: underline !important;
-		}
+    <!-- Header Navigation Section -->
+    <header class="navbar">
+        <!-- Left Side: Logo -->
+        <div class="nav-logo">
+            <div class="logo-icon">Σ</div>
+            <div class="logo-text">SigmaTeam</div>
+        </div>
 
-		.game_button svg {
-			background-repeat: no-repeat;
-			width: 22px;
-			max-height: 20px;
-			min-height: 22px;
-			/* float: left; */
-			margin: -4px 5px 0;
-			/* mix-blend-mode: difference; */
-			filter: invert(1);
-		}
+        <!-- Right Side Menu (Search Box & Social Options) -->
+        <div class="nav-right-group">
+            <!-- Search Bar Component -->
+            <div class="search-box">
+                <input type="text" placeholder="Search games...">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
 
-		.l-icon {
-			display: inline-block;
-			background-position: center;
-			background-repeat: no-repeat;
-			background-size: contain;
-			cursor: pointer;
-			width: 14px;
-			height: 14px;
-			filter: invert(1);
-			padding: 10px;
-			margin: 8px 5px 0;
-		}
+            <!-- Social Media Channels Icons -->
+            <div class="social-icons">
+                <a href="#" title="Discord"><i class="fa-brands fa-discord"></i></a>
+                <a href="#" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#" title="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#" title="Telegram"><i class="fa-brands fa-telegram"></i></a>
+            </div>
+        </div>
+    </header>
 
-		.l-icon-inactive {
-			filter: invert(0.5);
-		}
+    <!-- Welcome Headline -->
+    <section class="hero">
+        <h1>Welcome to <span>SigmaTeam</span></h1>
+        <p>Your ultimate hub for premium, high-speed, free game downloads. Secure packages, no speeds limits.</p>
+    </section>
 
-		.l-rate {
-			display: inline-block;
-			padding: 7px 4px;
-		}
+    <!-- Main Content Body -->
+    <main class="main-container">
+        <h2 class="section-title">Trending Downloads</h2>
+        
+        <div class="games-grid">
+            <!-- Game Item 1 -->
+            <div class="game-card">
+                <div class="game-thumbnail thumb-1">
+                    <i class="fa-solid fa-gun"></i>
+                </div>
+                <div class="game-info">
+                    <div class="game-title">Cyber Action 2026</div>
+                    <div class="game-meta">
+                        <span>Action / RPG</span>
+                        <span class="badge-free">FREE</span>
+                    </div>
+                    <a href="#" class="download-btn"><i class="fa-solid fa-download"></i> Download Now</a>
+                </div>
+            </div>
 
-		a.like:hover,
-		a.like:active,
-		a.like.clicked {
-			filter: invert(77%) sepia(67%) saturate(4341%) hue-rotate(85deg) brightness(94%) contrast(91%);
-		}
+            <!-- Game Item 2 -->
+            <div class="game-card">
+                <div class="game-thumbnail thumb-2">
+                    <i class="fa-solid fa-car-burst"></i>
+                </div>
+                <div class="game-info">
+                    <div class="game-title">Velocity Redline</div>
+                    <div class="game-meta">
+                        <span>Racing</span>
+                        <span class="badge-free">FREE</span>
+                    </div>
+                    <a href="#" class="download-btn"><i class="fa-solid fa-download"></i> Download Now</a>
+                </div>
+            </div>
 
-		a.dislike:hover,
-		a.dislike:active,
-		a.dislike.clicked {
-			filter: invert(52%) sepia(27%) saturate(5106%) hue-rotate(3deg) brightness(102%) contrast(101%);
-		}
+            <!-- Game Item 3 -->
+            <div class="game-card">
+                <div class="game-thumbnail thumb-3">
+                    <i class="fa-solid fa-ghost"></i>
+                </div>
+                <div class="game-info">
+                    <div class="game-title">Shadow Realms</div>
+                    <div class="game-meta">
+                        <span>Horror / Survival</span>
+                        <span class="badge-free">FREE</span>
+                    </div>
+                    <a href="#" class="download-btn"><i class="fa-solid fa-download"></i> Download Now</a>
+                </div>
+            </div>
 
-		.like {
-			background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.83333 7.16659V13.8333C3.83333 14.0543 3.74554 14.2662 3.58926 14.4225C3.43298 14.5788 3.22101 14.6666 3 14.6666H1.33333C1.11232 14.6666 0.900358 14.5788 0.744078 14.4225C0.587797 14.2662 0.5 14.0543 0.5 13.8333V7.99992C0.5 7.7789 0.587797 7.56694 0.744078 7.41066C0.900358 7.25438 1.11232 7.16659 1.33333 7.16659H3.83333ZM3.83333 7.16659C4.71739 7.16659 5.56523 6.8154 6.19036 6.19027C6.81548 5.56515 7.16667 4.71731 7.16667 3.83325V2.99992C7.16667 2.55789 7.34226 2.13397 7.65482 1.82141C7.96738 1.50885 8.39131 1.33325 8.83333 1.33325C9.27536 1.33325 9.69928 1.50885 10.0118 1.82141C10.3244 2.13397 10.5 2.55789 10.5 2.99992V7.16659H13C13.442 7.16659 13.866 7.34218 14.1785 7.65474C14.4911 7.9673 14.6667 8.39122 14.6667 8.83325L13.8333 12.9999C13.7135 13.5111 13.4861 13.9501 13.1855 14.2507C12.8849 14.5513 12.5274 14.6973 12.1667 14.6666H6.33333C5.67029 14.6666 5.03441 14.4032 4.56557 13.9344C4.09673 13.4655 3.83333 12.8296 3.83333 12.1666' stroke='white' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
-		}
+            <!-- Game Item 4 -->
+            <div class="game-card">
+                <div class="game-thumbnail thumb-4">
+                    <i class="fa-solid fa-chess"></i>
+                </div>
+                <div class="game-info">
+                    <div class="game-title">Strategy Commander</div>
+                    <div class="game-meta">
+                        <span>RTS / Strategy</span>
+                        <span class="badge-free">FREE</span>
+                    </div>
+                    <a href="#" class="download-btn"><i class="fa-solid fa-download"></i> Download Now</a>
+                </div>
+            </div>
+        </div>
+    </main>
 
-		.dislike {
-			background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.83333 8.83336V2.16669C3.83333 1.94568 3.74554 1.73372 3.58926 1.57744C3.43298 1.42116 3.22101 1.33336 3 1.33336H1.33333C1.11232 1.33336 0.900358 1.42116 0.744078 1.57744C0.587797 1.73372 0.5 1.94568 0.5 2.16669V8.00002C0.5 8.22104 0.587797 8.433 0.744078 8.58928C0.900358 8.74556 1.11232 8.83336 1.33333 8.83336H3.83333ZM3.83333 8.83336C4.71739 8.83336 5.56523 9.18455 6.19036 9.80967C6.81548 10.4348 7.16667 11.2826 7.16667 12.1667V13C7.16667 13.4421 7.34226 13.866 7.65482 14.1785C7.96738 14.4911 8.39131 14.6667 8.83333 14.6667C9.27536 14.6667 9.69928 14.4911 10.0118 14.1785C10.3244 13.866 10.5 13.4421 10.5 13V8.83336H13C13.442 8.83336 13.866 8.65776 14.1785 8.3452C14.4911 8.03264 14.6667 7.60872 14.6667 7.16669L13.8333 3.00003C13.7135 2.4888 13.4861 2.04982 13.1855 1.74922C12.8849 1.44862 12.5274 1.30267 12.1667 1.33336H6.33333C5.67029 1.33336 5.03441 1.59675 4.56557 2.06559C4.09673 2.53443 3.83333 3.17032 3.83333 3.83336' stroke='white' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
-		}
-
-		
-		@media (min-width: 1400px) {
-			.container, .container-sm, .container-md, .container-lg, .container-xl {
-				max-width: 1340px;
-			}
-		}
-	</style>
-	<div class="wallpaper"></div>
-		<div class="container-fluid p-0 ">
-		<!-- HEADER !-->
-		<style>
-	.search-input {
-		background-color: #1b283b;
-		width: 150px;
-		height: 24px;
-		border-radius: 10px;
-		animation-duration: 0.5s;
-		transition-duration: 0.5s;
-	}
-	.search-input input {
-		color: #c8c9c9;
-		height: 24px;
-		width: 100%;
-		padding-left: 30px;
-	}
-	.search-input button {
-		height: 21px;
-		padding: 0 5px;
-		position: absolute;
-	}
-	.search-input input,
-	.search-input button {
-		background: none;
-		border: none;
-		outline: none;
-	}
-	@media (max-width: 1399px) {
-		#pre-search.active,
-		.search-input.active {
-			width: 400px;
-		}
-		#pre-search .custom_width_block_preview_mid.block_category_mid {
-			width: 123px;
-		}
-		#pre-search .custom_width_block_preview_mid.block_category_mid img {
-			height: 81px;
-		}
-	}
-	@media (max-width: 1199px) {
-		#pre-search.active,
-		.search-input.active {
-			width: 250px;
-		}
-		#pre-search .custom_width_block_preview_mid.block_category_mid {
-			width: 110px;
-		}
-		#pre-search .custom_width_block_preview_mid.block_category_mid img {
-			height: 72px;
-		}
-	}
-	@media (min-width: 1400px) {
-		#pre-search.active,
-		.search-input.active {
-			width: 600px;
-		}
-		#pre-search .custom_width_block_preview_mid.block_category_mid {
-			width: 142px;
-		}
-		#pre-search .custom_width_block_preview_mid.block_category_mid img {
-			height: 94px;
-		}
-	}
-	#pre-search {
-		position: absolute;
-		z-index: 10;
-		width: 150px;
-		color: #c8c9c9;
-		/* visibility: hidden; */
-		background: #1b283b;
-		border-radius: 0 0 10px 10px;
-		animation-duration: 0.5s;
-		transition-duration: 0.5s;
-	}
-	#pre-search .block_category a {
-		padding-right: 0;
-		float: none;
-	}
-	.search-input.active {
-		border-radius: 10px 10px 0 0;
-		z-index: 2;
-		position: relative;
-	}
-	body.search-expanded::after {
-		background: #000000b3;
-		content: "";
-		height: 100%;
-		left: 0;
-		position: fixed;
-		top: 0;
-		width: 100%;
-		z-index: 1;
-	}
-	#see-all {
-		display: block;
-		float: right;
-		clear: both;
-		color: #c8c9c9;
-	}
-	#pre-search h3{
-		color: #c8c9c9;
-	}
-	.block_category > div,
-	#pre-search .block_category img {
-		min-height: auto;
-	}
-	#pre-search .game-panel-info-categories svg, .block_category .icons_game_list svg {
-		max-height: 20px;
-		min-height: 20px;
-	}
-</style>
-<div class="container-fluid pb-0 block_header_menu">
-	<div class="container">
-		<div class="row">
-			<nav class="navbar navbar-expand-lg col-md-12 pb-lg-0 pt-lg-1 px-lg-0 py-md-2 d-block">
-				<a class="navbar-brand col-md-1 col-3 p-0 mr-0 logo float-left" href="/">
-					<span class="mobile_menu_header_text text-white d-lg-none d-md-block float-left">
-						<!--Menu!-->
-						MY REAL GAMES
-					</span>
-				</a>
-				<input type="checkbox" id="checkbox" class="mobile-menu__checkbox d-none">
-				<label for="checkbox" class="mobile-menu__btn d-lg-none d-md-block float-right">
-					<div class="mobile-menu__icon"></div>
-				</label>
-				<div class="d-lg-none d-md-block float-right image_search_top_menu">
-					<a class="icon_search" data-search="on" href="/search.html">
-						<?xml version="1.0" encoding="iso-8859-1"?><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 118.783 118.783" style="enable-background:new 0 0 118.783 118.783;" xml:space="preserve"><g><path d="M115.97,101.597L88.661,74.286c4.64-7.387,7.333-16.118,7.333-25.488c0-26.509-21.49-47.996-47.998-47.996
-S0,22.289,0,48.798c0,26.51,21.487,47.995,47.996,47.995c10.197,0,19.642-3.188,27.414-8.605l26.984,26.986
-c1.875,1.873,4.333,2.806,6.788,2.806c2.458,0,4.913-0.933,6.791-2.806C119.72,111.423,119.72,105.347,115.97,101.597z
- M47.996,81.243c-17.917,0-32.443-14.525-32.443-32.443s14.526-32.444,32.443-32.444c17.918,0,32.443,14.526,32.443,32.444
-S65.914,81.243,47.996,81.243z"/></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-					</a>
-				</div>
-				<div class="col-lg-11 col-md-12 p-0 mobile-menu__container float-left">
-					<div class="col-md-12 p-0">
-						<div class="col-md-12 float-left category_top_menu">
-							<div class="d-md-block d-lg-none col-12 float-left py-0 px-0">
-								<div class="float-left col-12 float-left category_top_menu_main">
-									<div class="image_search_top_menu float-left">
-		<a class="icon_twitter" target="_blank" rel="nofollow" href="https://twitter.com/MyRealGames">
-		<svg id="Layer_1" enable-background="new 0 0 100 100" height="512" viewBox="0 0 100 100" width="512" xmlns="http://www.w3.org/2000/svg">
-	<path id="_x30_4.Twitter" d="m89.9 25.2c-3 1.3-6.1 2.2-9.4 2.6 3.4-2 6-5.2 7.2-9.1-3.2 1.9-6.7 3.2-10.4 4-3-3.2-7.3-5.2-12-5.2-9.1 0-16.4 7.4-16.4 16.4 0 1.3.1 2.5.4 3.7-13.6-.6-25.6-7.2-33.7-17.1-5.8 10.4.7 19 5 21.9-2.6 0-5.2-.8-7.4-2 0 8.1 5.7 14.8 13.1 16.3-1.6.5-5.2.8-7.4.3 2.1 6.5 8.2 11.3 15.3 11.4-5.6 4.4-13.8 7.9-24.3 6.8 7.3 4.7 15.9 7.4 25.2 7.4 30.2 0 46.6-25 46.6-46.6 0-.7 0-1.4-.1-2.1 3.4-2.5 6.2-5.4 8.3-8.7z" />
-</svg>
-	</a>
-	<a class="icon_youtube" target="_blank" rel="nofollow" href="https://www.youtube.com/channel/UCMwYlt0zCYqbGKyhJdNwfCQ">
-		<svg id="Layer_1" enable-background="new 0 0 100 100" height="512" viewBox="0 0 100 100" width="512" xmlns="http://www.w3.org/2000/svg">
-	<g id="_x30_2.YouTube_1_">
-		<path id="Icon_23_" d="m74.9 21.4h-49.8c-8.4 0-15.1 6.8-15.1 15.1v26.9c0 8.4 6.8 15.1 15.1 15.1h49.8c8.4 0 15.1-6.8 15.1-15.1v-26.9c0-8.3-6.8-15.1-15.1-15.1zm-35.4 40.9v-24.6l21 12.3z" />
-	</g>
-</svg>
-	</a>
-	<a class="icon_facebook" target="_blank" rel="nofollow" href="https://www.facebook.com/MyRealGames/">
-		<svg id="Layer_1" enable-background="new 0 0 100 100" height="512" viewBox="0 0 100 100" width="512" xmlns="http://www.w3.org/2000/svg">
-	<g id="_x30_1._Facebook">
-		<path id="Icon_11_" d="m40.4 55.2c-.3 0-6.9 0-9.9 0-1.6 0-2.1-.6-2.1-2.1 0-4 0-8.1 0-12.1 0-1.6.6-2.1 2.1-2.1h9.9c0-.3 0-6.1 0-8.8 0-4 .7-7.8 2.7-11.3 2.1-3.6 5.1-6 8.9-7.4 2.5-.9 5-1.3 7.7-1.3h9.8c1.4 0 2 .6 2 2v11.4c0 1.4-.6 2-2 2-2.7 0-5.4 0-8.1.1-2.7 0-4.1 1.3-4.1 4.1-.1 3 0 5.9 0 9h11.6c1.6 0 2.2.6 2.2 2.2v12.1c0 1.6-.5 2.1-2.2 2.1-3.6 0-11.3 0-11.6 0v32.6c0 1.7-.5 2.3-2.3 2.3-4.2 0-8.3 0-12.5 0-1.5 0-2.1-.6-2.1-2.1 0-10.5 0-32.4 0-32.7z" />
-	</g>
-</svg>
-	</a>
-</div>
-<div class="dropdown float-right head-language">
-	<button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-		<img src="/images/flags/en.png" alt="en" title="English" />
-	</button>
-	<div class="dropdown-menu">
-					<a class="dropdown-item" onclick="saveLang('ru')" href="/ru/">
-				<img src="/images/flags/ru.png" alt="ru" title="Русский" />
-				Русский			</a>
-					<a class="dropdown-item" onclick="saveLang('de')" href="/de/">
-				<img src="/images/flags/de.png" alt="de" title="Deutsch" />
-				Deutsch			</a>
-					<a class="dropdown-item" onclick="saveLang('fr')" href="/fr/">
-				<img src="/images/flags/fr.png" alt="fr" title="Français" />
-				Français			</a>
-					<a class="dropdown-item" onclick="saveLang('es')" href="/es/">
-				<img src="/images/flags/es.png" alt="es" title="Español" />
-				Español			</a>
-					<a class="dropdown-item" onclick="saveLang('it')" href="/it/">
-				<img src="/images/flags/it.png" alt="it" title="Italiano" />
-				Italiano			</a>
-					<a class="dropdown-item" onclick="saveLang('tr')" href="/tr/">
-				<img src="/images/flags/tr.png" alt="tr" title="Türkçe" />
-				Türkçe			</a>
-					<a class="dropdown-item" onclick="saveLang('cs')" href="/cz/">
-				<img src="/images/flags/cs.png" alt="cs" title="Čeština" />
-				Čeština			</a>
-					<a class="dropdown-item" onclick="saveLang('el')" href="/gr/">
-				<img src="/images/flags/el.png" alt="el" title="Ελληνικά" />
-				Ελληνικά			</a>
-					<a class="dropdown-item" onclick="saveLang('hu')" href="/hu/">
-				<img src="/images/flags/hu.png" alt="hu" title="Magyar" />
-				Magyar			</a>
-					<a class="dropdown-item" onclick="saveLang('pl')" href="/pl/">
-				<img src="/images/flags/pl.png" alt="pl" title="Polski" />
-				Polski			</a>
-					<a class="dropdown-item" onclick="saveLang('nl')" href="/nl/">
-				<img src="/images/flags/nl.png" alt="nl" title="Nederlands" />
-				Nederlands			</a>
-					<a class="dropdown-item" onclick="saveLang('sv')" href="/se/">
-				<img src="/images/flags/sv.png" alt="sv" title="Svenska" />
-				Svenska			</a>
-					<a class="dropdown-item" onclick="saveLang('hi')" href="/hi/">
-				<img src="/images/flags/hi.png" alt="hi" title="हिंदी" />
-				हिंदी			</a>
-					<a class="dropdown-item" onclick="saveLang('id')" href="/id/">
-				<img src="/images/flags/id.png" alt="id" title="Indonesia" />
-				Indonesia			</a>
-					<a class="dropdown-item" onclick="saveLang('ko')" href="/kr/">
-				<img src="/images/flags/ko.png" alt="ko" title="한국어" />
-				한국어			</a>
-					<a class="dropdown-item" onclick="saveLang('ja')" href="/jp/">
-				<img src="/images/flags/ja.png" alt="ja" title="日本語" />
-				日本語			</a>
-			</div>
-	<script>
-		function saveLang(lang) {
-			document.cookie = 'lastLang=' + escape(lang) + '; max-age=' + 2592000 + '; path=/';
-		}
-	</script>
-</div>
-								</div>
-							</div>
-																<div class="active float-left category_top_menu_main">
-										<a href="/" class="active">
-											<span>
-												Games											</span>
-										</a>
-									</div>
-																			<div class="col-md-12 float-left category_top_menu_child_mobile py-2 d-lg-none text-center">
-																							<a href="/genres/shooting-games" class=" fix_top_pad " title="Shooting and Action Games">Shooting</a>
-																							<a href="/genres/arcade-games" class=" fix_top_pad " title="Arcade and Sports Games">Arcade</a>
-																							<a href="/genres/car-games" class=" fix_top_pad " title="Car and Racing Games">Car</a>
-																							<a href="/genres/match3-games" class=" fix_top_pad " title="Match 3 Games">Match 3</a>
-																							<a href="/genres/puzzle-games" class=" fix_top_pad " title="Puzzle Games">Puzzle</a>
-																							<a href="/genres/hidden-object-games" class=" fix_top_pad " title="Hidden Object Games">Hidden Object</a>
-																							<a href="/genres/time-management-games" class=" fix_top_pad " title="Time Management Games">Time Management</a>
-																							<a href="/genres/board-games" class=" fix_top_pad " title="Card and Board Games">Card & Board</a>
-																							<a href="/genres/girl-games" class=" fix_top_pad " title="Girl Games">Girls</a>
-																							<a href="/genres/kids-games" class=" fix_top_pad " title="Kids Games">Kids</a>
-																					</div>
-																<div class=" float-left category_top_menu_main">
-										<a href="/download-free-games" class="">
-											<span>
-												Download Games											</span>
-										</a>
-									</div>
-																		<div class=" float-left category_top_menu_main">
-										<a href="/free-online-games" class="">
-											<span>
-												Online Games											</span>
-										</a>
-									</div>
-																<div class="d-none d-lg-block">
-								<div class="float-right">
-									<div class="float-right"><div class="image_search_top_menu float-left">
-		<a class="icon_twitter" target="_blank" rel="nofollow" href="https://twitter.com/MyRealGames">
-		<svg id="Layer_1" enable-background="new 0 0 100 100" height="512" viewBox="0 0 100 100" width="512" xmlns="http://www.w3.org/2000/svg">
-	<path id="_x30_4.Twitter" d="m89.9 25.2c-3 1.3-6.1 2.2-9.4 2.6 3.4-2 6-5.2 7.2-9.1-3.2 1.9-6.7 3.2-10.4 4-3-3.2-7.3-5.2-12-5.2-9.1 0-16.4 7.4-16.4 16.4 0 1.3.1 2.5.4 3.7-13.6-.6-25.6-7.2-33.7-17.1-5.8 10.4.7 19 5 21.9-2.6 0-5.2-.8-7.4-2 0 8.1 5.7 14.8 13.1 16.3-1.6.5-5.2.8-7.4.3 2.1 6.5 8.2 11.3 15.3 11.4-5.6 4.4-13.8 7.9-24.3 6.8 7.3 4.7 15.9 7.4 25.2 7.4 30.2 0 46.6-25 46.6-46.6 0-.7 0-1.4-.1-2.1 3.4-2.5 6.2-5.4 8.3-8.7z" />
-</svg>
-	</a>
-	<a class="icon_youtube" target="_blank" rel="nofollow" href="https://www.youtube.com/channel/UCMwYlt0zCYqbGKyhJdNwfCQ">
-		<svg id="Layer_1" enable-background="new 0 0 100 100" height="512" viewBox="0 0 100 100" width="512" xmlns="http://www.w3.org/2000/svg">
-	<g id="_x30_2.YouTube_1_">
-		<path id="Icon_23_" d="m74.9 21.4h-49.8c-8.4 0-15.1 6.8-15.1 15.1v26.9c0 8.4 6.8 15.1 15.1 15.1h49.8c8.4 0 15.1-6.8 15.1-15.1v-26.9c0-8.3-6.8-15.1-15.1-15.1zm-35.4 40.9v-24.6l21 12.3z" />
-	</g>
-</svg>
-	</a>
-	<a class="icon_facebook" target="_blank" rel="nofollow" href="https://www.facebook.com/MyRealGames/">
-		<svg id="Layer_1" enable-background="new 0 0 100 100" height="512" viewBox="0 0 100 100" width="512" xmlns="http://www.w3.org/2000/svg">
-	<g id="_x30_1._Facebook">
-		<path id="Icon_11_" d="m40.4 55.2c-.3 0-6.9 0-9.9 0-1.6 0-2.1-.6-2.1-2.1 0-4 0-8.1 0-12.1 0-1.6.6-2.1 2.1-2.1h9.9c0-.3 0-6.1 0-8.8 0-4 .7-7.8 2.7-11.3 2.1-3.6 5.1-6 8.9-7.4 2.5-.9 5-1.3 7.7-1.3h9.8c1.4 0 2 .6 2 2v11.4c0 1.4-.6 2-2 2-2.7 0-5.4 0-8.1.1-2.7 0-4.1 1.3-4.1 4.1-.1 3 0 5.9 0 9h11.6c1.6 0 2.2.6 2.2 2.2v12.1c0 1.6-.5 2.1-2.2 2.1-3.6 0-11.3 0-11.6 0v32.6c0 1.7-.5 2.3-2.3 2.3-4.2 0-8.3 0-12.5 0-1.5 0-2.1-.6-2.1-2.1 0-10.5 0-32.4 0-32.7z" />
-	</g>
-</svg>
-	</a>
-</div>
-<div class="dropdown float-right head-language">
-	<button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-		<img src="/images/flags/en.png" alt="en" title="English" />
-	</button>
-	<div class="dropdown-menu">
-					<a class="dropdown-item" onclick="saveLang('ru')" href="/ru/">
-				<img src="/images/flags/ru.png" alt="ru" title="Русский" />
-				Русский			</a>
-					<a class="dropdown-item" onclick="saveLang('de')" href="/de/">
-				<img src="/images/flags/de.png" alt="de" title="Deutsch" />
-				Deutsch			</a>
-					<a class="dropdown-item" onclick="saveLang('fr')" href="/fr/">
-				<img src="/images/flags/fr.png" alt="fr" title="Français" />
-				Français			</a>
-					<a class="dropdown-item" onclick="saveLang('es')" href="/es/">
-				<img src="/images/flags/es.png" alt="es" title="Español" />
-				Español			</a>
-					<a class="dropdown-item" onclick="saveLang('it')" href="/it/">
-				<img src="/images/flags/it.png" alt="it" title="Italiano" />
-				Italiano			</a>
-					<a class="dropdown-item" onclick="saveLang('tr')" href="/tr/">
-				<img src="/images/flags/tr.png" alt="tr" title="Türkçe" />
-				Türkçe			</a>
-					<a class="dropdown-item" onclick="saveLang('cs')" href="/cz/">
-				<img src="/images/flags/cs.png" alt="cs" title="Čeština" />
-				Čeština			</a>
-					<a class="dropdown-item" onclick="saveLang('el')" href="/gr/">
-				<img src="/images/flags/el.png" alt="el" title="Ελληνικά" />
-				Ελληνικά			</a>
-					<a class="dropdown-item" onclick="saveLang('hu')" href="/hu/">
-				<img src="/images/flags/hu.png" alt="hu" title="Magyar" />
-				Magyar			</a>
-					<a class="dropdown-item" onclick="saveLang('pl')" href="/pl/">
-				<img src="/images/flags/pl.png" alt="pl" title="Polski" />
-				Polski			</a>
-					<a class="dropdown-item" onclick="saveLang('nl')" href="/nl/">
-				<img src="/images/flags/nl.png" alt="nl" title="Nederlands" />
-				Nederlands			</a>
-					<a class="dropdown-item" onclick="saveLang('sv')" href="/se/">
-				<img src="/images/flags/sv.png" alt="sv" title="Svenska" />
-				Svenska			</a>
-					<a class="dropdown-item" onclick="saveLang('hi')" href="/hi/">
-				<img src="/images/flags/hi.png" alt="hi" title="हिंदी" />
-				हिंदी			</a>
-					<a class="dropdown-item" onclick="saveLang('id')" href="/id/">
-				<img src="/images/flags/id.png" alt="id" title="Indonesia" />
-				Indonesia			</a>
-					<a class="dropdown-item" onclick="saveLang('ko')" href="/kr/">
-				<img src="/images/flags/ko.png" alt="ko" title="한국어" />
-				한국어			</a>
-					<a class="dropdown-item" onclick="saveLang('ja')" href="/jp/">
-				<img src="/images/flags/ja.png" alt="ja" title="日本語" />
-				日本語			</a>
-			</div>
-	<script>
-		function saveLang(lang) {
-			document.cookie = 'lastLang=' + escape(lang) + '; max-age=' + 2592000 + '; path=/';
-		}
-	</script>
-</div>
-</div>
-																		<div class="search-block float-right">
-										<form
-											action="/search.html"
-											class="search-form m-auto "
-											autocomplete="off"
-										>
-											<div class="search-input">
-												<button><svg width="17" class="" height="17" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><g id="Search"><path id="Vector" d="M6.79 1.75C9.85 1.75 12.33 4.24 12.33 7.29C12.33 10.34 9.84 12.83 6.79 12.83C3.74 12.83 1.25 10.35 1.25 7.29C1.25 4.23 3.74 1.75 6.79 1.75ZM6.79 0.5C3.04 0.5 0 3.54 0 7.29C0 11.04 3.04 14.08 6.79 14.08C10.54 14.08 13.58 11.04 13.58 7.29C13.58 3.54 10.54 0.5 6.79 0.5Z" fill="#cdcdcd"></path><path id="Vector_2" d="M16.3801 17.5C16.2201 17.5 16.0601 17.44 15.9401 17.32L11.0401 12.42C10.8001 12.18 10.8001 11.78 11.0401 11.54C11.2801 11.3 11.6801 11.3 11.9201 11.54L16.8201 16.44C17.0601 16.68 17.0601 17.08 16.8201 17.32C16.7001 17.44 16.5401 17.5 16.3801 17.5Z" fill="#cdcdcd"></path></g></svg></button>
-												<input
-													name="query"
-													placeholder="Search"
-													class=""
-													value=""
-													autocomplete="off"
-												/>
-												<div id="pre-search" style="display: none"></div>
-											</div>
-										</form>
-									</div>
-																	</div>
-							</div>
-						</div>
-						<div class="col-md-12 float-left category_top_menu_child p-0 d-none d-lg-block">
-							<p class="m-0">
-																				<a href="/genres/shooting-games" class="fix_top_pad " title="Shooting and Action Games">Shooting</a>
-																				<a href="/genres/arcade-games" class="fix_top_pad " title="Arcade and Sports Games">Arcade</a>
-																				<a href="/genres/car-games" class="fix_top_pad " title="Car and Racing Games">Car</a>
-																				<a href="/genres/match3-games" class="fix_top_pad " title="Match 3 Games">Match 3</a>
-																				<a href="/genres/puzzle-games" class="fix_top_pad " title="Puzzle Games">Puzzle</a>
-																				<a href="/genres/hidden-object-games" class="fix_top_pad " title="Hidden Object Games">Hidden Object</a>
-																				<a href="/genres/time-management-games" class="fix_top_pad " title="Time Management Games">Time Management</a>
-																				<a href="/genres/board-games" class="fix_top_pad " title="Card and Board Games">Card & Board</a>
-																				<a href="/genres/girl-games" class="fix_top_pad " title="Girl Games">Girls</a>
-																				<a href="/genres/kids-games" class="fix_top_pad " title="Kids Games">Kids</a>
-															</p>
-						</div>
-					</div>
-				</div>
-			</nav>
-		</div>
-	</div>
-</div>
-<script>var ajax={x:function(){if("undefined"!=typeof XMLHttpRequest)return new XMLHttpRequest;for(var e,t=["MSXML2.XmlHttp.6.0","MSXML2.XmlHttp.5.0","MSXML2.XmlHttp.4.0","MSXML2.XmlHttp.3.0","MSXML2.XmlHttp.2.0","Microsoft.XmlHttp"],n=0;n<t.length;n++)try{e=new ActiveXObject(t[n]);break}catch(e){}return e},send:function(e,t,n,o,r,a){void 0===a&&(a=!0);var p=ajax.x();p.open(o,e,a);p.onerror=n;p.onreadystatechange=function(){4==p.readyState&&t(p.responseText)},"POST"==o&&p.setRequestHeader("Content-type","application/x-www-form-urlencoded"),p.send(r)},get:function(e,t,n,o,r){var a=[];for(var p in t)a.push(encodeURIComponent(p)+"="+encodeURIComponent(t[p]));ajax.send(e+(a.length?"?"+a.join("&"):""),n,o,"GET",null,r)},post:function(e,t,n,o,r){var a=[];for(var p in t)a.push(encodeURIComponent(p)+"="+encodeURIComponent(t[p]));ajax.send(e,n,o,"POST",a.join("&"),r)}};</script>
-
-<script>
-	let body = document.querySelector('body');
-	let searchPanel = document.querySelector('.search-input');
-	let searchInput = document.querySelector('.search-input input');
-	let searchButton = document.querySelector('.search-input button');
-	let searchSvg = document.querySelector('.search-input button svg');
-	let preSearch = document.querySelector('#pre-search');
-	let searchDraw = 0;
-
-	searchInput.addEventListener('change', changeHrefSeeAll);
-	searchInput.addEventListener('input', changeHrefSeeAll);
-
-	function changeHrefSeeAll(e) {
-		var localSearchDraw = ++searchDraw;
-		setTimeout(function() {
-			if (localSearchDraw !== searchDraw || !e.target.value) {
-				return;
-			}
-			ajax.get(
-				'/presearch.html?query=' + e.target.value + '&draw=' + localSearchDraw, {},
-				function(response) {
-					if (localSearchDraw !== searchDraw) {
-						return;
-					}
-					try {
-						preSearch.innerHTML = response;
-						if (searchPanel.classList.contains('active')) {
-							body.classList.add('search-expanded');
-						}
-					} catch (e) {
-
-					}
-				},
-				function(xhr) {
-				}
-			);
-		}, 500);
-	}
-
-	searchInput.addEventListener('focus', (e) => {
-		preSearch.style.display = 'block';
-		setTimeout(function() {
-			searchPanel.classList.add('active');
-			preSearch.classList.add('active');
-			if (preSearch.innerHTML) {
-				body.classList.add('search-expanded');
-			}
-		}, 10);
-	});
-
-	searchPanel.addEventListener('click', (e) => {
-		e.stopPropagation();
-	});
-	preSearch.addEventListener('click', (e) => {
-		e.stopPropagation();
-	});
-	document.addEventListener('click', (e) => {
-		if (searchPanel.classList.contains('active')) {
-			searchPanel.classList.remove('active');
-			body.classList.remove('search-expanded');
-			preSearch.classList.remove('active');
-			setTimeout(function() {
-				if (!searchPanel.classList.contains('active')) {
-					preSearch.style.display = 'none';
-				}
-			}, 500);
-		}
-	});
-</script>
-		<div class="home-page">
-						<div class="container block_content_padding block_tops">
-	<div class="row m-1">
-		<div class="col-12 block_content_title_hover p-0">
-							<a>
-					<h2>Featured Games</h2>
-					<div class="block-border-title"></div>
-				</a>
-					</div>
-	</div>
-	<div class="row m-1 justify-content-center block_category">
-		<div class="custom_width_block_preview_big big_preview width_auto_sm">
-	<div>
-		<a class="" href="/download-free-games/8-ball-frenzy" title="8 Ball Frenzy">
-							<picture>
-					<img data-src="https://cdn.myrealgames.com/catalog/cache/catalog/items/15/60_big.jpg" title="8 Ball Frenzy" alt="8 Ball Frenzy">
-					<p>8 Ball Frenzy</p>
-				</picture>
-					</a>
-	</div>
-</div>
-<div class="custom_width_block_preview_big big_preview width_auto_sm">
-	<div>
-		<a class="" href="/download-free-games/alices-magical-mahjong" title="Alice's Magical Mahjong">
-							<picture>
-					<img data-src="https://cdn.myrealgames.com/catalog/cache/catalog/items/248/992_big.jpg" title="Alice's Magical Mahjong" alt="Alice's Magical Mahjong">
-					<p>Alice's Magical Mahjong</p>
-				</picture>
-					</a>
-	</div>
-</div>
-<div class="custom_width_block_preview_big big_preview width_auto_sm">
-	<div>
-		<a class="" href="/download-free-games/forge-of-empires" title="Forge of Empires">
-							<picture>
-					<img data-src="https://cdn.myrealgames.com/catalog/cache/catalog/items/412/1648_big.jpg" title="Forge of Empires" alt="Forge of Empires">
-					<p>Forge of Empires</p>
-				</picture>
-					</a>
-	</div>
-</div>
-	</div>
-</div>
-			<div class="container block_content_padding block_tops">
-	<div class="row m-1">
-		<div class="col-12 block_content_title_hover block_content_title_sm p-0">
-							<a>
-					<h2>New Free Games</h2>
-					<div class="block-border-title"></div>
-				</a>
-					</div>
-	</div>
-	<div class="row m-1 justify-content-center block_category">
-		<div class="custom_width_block_preview_mid block_category_mid">
-	<div>
-					<picture>
-				<a class="" href="/free-online-games/moto-maniac-3" title="Moto Maniac 3">
-					<img data-src='https://cdn.myrealgames.com/catalog/cache/catalog/items/1391/4233.jpg' title="Moto Maniac 3" alt="Moto Maniac 3">
-					<p>Moto Maniac 3</p>
-				</a>
-			</picture>
-					</div>
-</div>
-<div class="custom_width_block_preview_mid block_category_mid">
-	<div>
-					<picture>
-				<a class="" href="/free-online-games/ninjas-return" title="Ninjas Return">
-					<img data-src='https://cdn.myrealgames.com/catalog/cache/catalog/items/1390/4232.jpg' title="Ninjas Return" alt="Ninjas Return">
-					<p>Ninjas Return</p>
-				</a>
-			</picture>
-					</div>
-</div>
-<div class="custom_width_block_preview_mid block_category_mid">
-	<div>
-					<picture>
-				<a class="" href="/free-online-games/pregnant-mother-simulator" title="Pregnant Mother Simulator">
-					<img data-src='https://cdn.myrealgames.com/catalog/cache/catalog/items/1389/4237.jpg' title="Pregnant Mother Simulator" alt="Pregnant Mother Simulator">
-					<p>Pregnant Mother Simulator</p>
-				</a>
-			</picture>
-					</div>
-</div>
-<div class="custom_width_block_preview_mid block_category_mid">
-	<div>
-					<picture>
-				<a class="" href="/free-online-games/cat-and-granny" title="Cat and Granny">
-					<img data-src='https://cdn.myrealgames.com/catalog/cache/catalog/items/1388/4236.jpg' title="Cat and Granny" alt="Cat and Granny">
-					<p>Cat and Granny</p>
-				</a>
-			</picture>
-					</div>
-</div>
-<div class="custom_width_block_preview_mid block_category_mid">
-	<div>
-					<picture>
-				<a class="" href="/free-online-games/solitaire-farm-seasons-5" title="Solitaire Farm Seasons 5">
-					<img data-src='https://cdn.myrealgames.com/catalog/cache/catalog/items/1387/4229.jpg' title="Solitaire Farm Seasons 5" alt="Solitaire Farm Seasons 5">
-					<p>Solitaire Farm Seasons 5</p>
-				</a>
-			</picture>
-					</div>
-</div>
-<div class="custom_width_block_preview_mid block_category_mid">
-	<div>
-					<picture>
-				<a class="" href="/free-online-games/yummy-tales-4" title="Yummy Tales 4">
-					<img data-src='https://cdn.myrealgames.com/catalog/cache/catalog/items/1386/4228.jpg' title="Yummy Tales 4" alt="Yummy Tales 4">
-					<p>Yummy Tales 4</p>
-				</a>
-			</picture>
-					</div>
-</div>
-<div class="custom_width_block_preview_mid block_category_mid">
-	<div>
-					<picture>
-				<a class="" href="/free-online-games/subway-clash-3d" title="Subway Clash 3D">
-					<img data-src='https://cdn.myrealgames.com/catalog/cache/catalog/items/1385/4227.jpg' title="Subway Clash 3D" alt="Subway Clash 3D">
-					<p>Subway Clash 3D</p>
-				</a>
-			</picture>
-					</div>
-</div>
-<div class="custom_width_block_preview_mid block_category_mid">
-	<div>
-					<picture>
-				<a class="" href="/free-online-games/gym-simulator-online-escape" title="Gym Simulator Online Escape">
-					<img data-src='https://cdn.myrealgames.com/catalog/cache/catalog/items/1383/4226.jpg' title="Gym Simulator Online Escape" alt="Gym Simulator Online Escape">
-					<p>Gym Simulator Online Escape</p>
-				</a>
-			</picture>
-					</div>
-</div>
-<div class="custom_width_block_preview_mid block_category_mid">
-	<div>
-					<picture>
-				<a class="" href="/free-online-games/tiny-football-cup-2026" title="TIny Football Cup 2026">
-					<img data-src='https://cdn.myrealgames.com/catalog/cache/catalog/items/1382/4221.jpg' title="TIny Football Cup 2026" alt="TIny Football Cup 2026">
-					<p>TIny Football Cup 2026</p>
-				</a>
-			</picture>
-					</div>
-</div>
-<div class="custom_width_block_preview_mid block_category_mid">
-	<div>
-					<picture>
-				<a class="" href="/free-online-games/stickman-dismount-simulator" title="Stickman Dismount Simulator">
-					<img data-src='https://cdn.myrealgames.com/catalog/cache/catalog/items/1381/4220.jpg' title="Stickman Dismount Simulator" alt="Stickman Dismount Simulator">
-					<p>Stickman Dismount Simulator</p>
-				</a>
-			</picture>
-					</div>
-</div>
-	</div>
-</div>
-			<div class="container block_content_padding block_tops">
-	<div class="container-fluid adWords-bg mobile_ad_correct mt-4 mb-3 responsive_padding">
-	<p class="text-center mb-0 pb-1">Advertisement</p>
-	<table align="center" cellpadding="0" cellspacing="0">
-		<tr>
-			<td>
-				<div class="responsive_ins">
-					<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- home_1 -->
-<ins class="adsbygoogle"
-	style="display:block"
-	data-ad-client="ca-pub-9798851892435037"
-	data-ad-slot="3041536084"
-	data-ad-format="auto"
-	data-full-width-responsive="true"></ins>
-<script>
-	(adsbygoogle = window.adsbygoogle || []).push({});
-</script>				</div>
-			</td>
-		</tr>
-	</table>
-</div>
-</div>
-			<div class="container block_content_padding block_tops">
-	<div class="row m-1">
-		<div class="col-12 block_content_title_hover block_content_title_sm p-0">
-							<a href="/download-free-games">
-					<h2>Download Free Games - Top 10</h2>
-					<span class="display_none_sm category_url_top">
-						<span>
-							show more						</span>
-						<span class="icon_show_more"></span>
-					</span>
-					<div class="block-border-title"></div>
-				</a>
-					</div>
-	</div>
-	<div class="row m-1 justify-content-center block_category">
-		<div class="custom_width_block_preview_mid block_category_mid">
-	<div>
-					<picture>
-				<a class="" href="/download-free-games/around-the-world-in-80-days" title="Around the World in 80 Days">
-					<img data-src='https://cdn.myrealgames.com/catalog/cache/catalog/items/6/21.jpg' title="Around the World in 80 Days" alt="Around the World in 80 Days">
-					<p>Around the World in 80 Days</p>
-				</a>
-			</picture>
-					</div>
-</div>
-<div class="custom_width_block_preview_mid block_category_mid">
-	<div>
-					<picture>
-				<a class="" href="/download-free-games/the-rise-of-atlantis" title="The Rise of Atlantis">
-					<img data-src='https://cdn.myrealgames.com/catalog/cache/catalog/items/1/2195.jpg' title="The Rise of Atlantis" alt="The Rise of Atlantis">
-					<p>The Rise of Atlantis</p>
-				</a>
-			</picture>
-					</div>
-</div>
-<div class="custom_width_block_preview_mid block_category_mid">
-	<div>
-					<picture>
-				<a class="" href="/download-free-games/dream-vacation-solitaire" title="Dream Vacation Solitaire">
-					<img data-src='https://cdn.myrealgames.com/catalog/cache/catalog/items/18/72.jpg' title="Dream Vacation Solitaire" alt="Dream Vacation Solitaire">
-					<p>Dream Vacation Solitaire</p>
-				</a>
-			</picture>
-					</div>
-</div>
-<div class="custom_width_block_preview_mid block_category_mid">
-	<div>
-					<picture>
-				<a class="" href="/download-free-games/amazon-adventure" title="Amazon Adventure">
-					<img data-src='https://cdn.myrealgames.com/catalog/cache/catalog/items/4/13.jpg' title="Amazon Adventure" alt="Amazon Adventure">
-					<p>Amazon Adventure</p>
-				</a>
-			</picture>
-					</div>
-</div>
-<div class="custom_width_block_preview_mid block_category_mid">
-	<div>
-					<picture>
-				<a class="" href="/download-free-games/mah-jong-quest" title="Mah Jong Quest">
-					<img data-src='https://cdn.myrealgames.com/catalog/cache/catalog/items/14/56.jpg' title="Mah Jong Quest" alt="Mah Jong Quest">
-					<p>Mah Jong Quest</p>
-				</a>
-			</picture>
-					</div>
-</div>
-<div class="custom_width_block_preview_mid block_category_mid">
-	<div>
-					<picture>
-				<a class="" href="/download-free-games/fishdom-3" title="Fishdom 3">
-					<img data-src='https://cdn.myrealgames.com/catalog/cache/catalog/items/3/9.jpg' title="Fishdom 3" alt="Fishdom 3">
-					<p>Fishdom 3</p>
-				</a>
-			</picture>
-					</div>
-</div>
-<div class="custom_width_block_preview_mid block_category_mid">
-	<div>
-					<picture>
-				<a class="" href="/download-free-games/supercow" title="Supercow">
-					<img data-src='https://cdn.myrealgames.com/catalog/cache/catalog/items/11/44.jpg' title="Supercow" alt="Supercow">
-					<p>Supercow</p>
-				</a>
-			</picture>
-					</div>
-</div>
-<div class="custom_width_block_preview_mid block_category_mid">
-	<div>
-					<picture>
-				<a class="" href="/download-free-games/jewel-quest-heritage" title="Jewel Quest Heritage">
-					<img data-src='https://cdn.myrealgames.com/catalog/cache/catalog/items/23/92.jpg' title="Jewel Quest Heritage" alt="Jewel Quest Heritage">
-					<p>Jewel Quest Heritage</p>
-				</a>
-			</picture>
-					</div>
-</div>
-<div class="custom_width_block_preview_mid block_category_mid">
-	<div>
-					<picture>
-				<a class="" href="/download-free-games/city-racing" title="City Racing">
-					<img data-src='https://cdn.myrealgames.com/catalog/cache/catalog/items/9/36.jpg' title="City Racing" alt="City Racing">
-					<p>City Racing</p>
-				</a>
-			</picture>
-					</div>
-</div>
-<div class="custom_width_block_preview_mid block_category_mid">
-	<div>
-					<picture>
-				<a class="" href="/download-free-games/bubble-shooter-classic" title="Bubble Shooter Classic">
-					<img data-src='https://cdn.myrealgames.com/catalog/cache/catalog/items/32/128.jpg' title="Bubble Shooter Classic" alt="Bubble Shooter Classic">
-					<p>Bubble Shooter Classic</p>
-				</a>
-			</picture>
-					</div>
-</div>
-	</div>
-</div>
-			<div class="container block_content_padding block_tops">
-	<div class="row m-1">
-		<div class="col-12 block_content_title_hover block_content_title_sm p-0">
-							<a href="/free-online-games">
-					<h2>Free Online Games - Top 10</h2>
-					<span class="display_none_sm category_url_top">
-						<span>
-							show more						</span>
-						<span class="icon_show_more"></span>
-					</span>
-					<div class="block-border-title"></div>
-				</a>
-					</div>
-	</div>
-	<div class="row m-1 justify-content-center block_category">
-		<div class="custom_width_block_preview_mid block_category_mid">
-	<div>
-					<picture>
-				<a class="" href="/free-online-games/colorboom" title="Colorboom">
-					<img data-src='https://cdn.myrealgames.com/catalog/cache/catalog/items/673/1938.jpg' title="Colorboom" alt="Colorboom">
-					<p>Colorboom</p>
-				</a>
-			</picture>
-					</div>
-</div>
-<div class="custom_width_block_preview_mid block_category_mid">
-	<div>
-					<picture>
-				<a class="" href="/free-online-games/art-is-awesome" title="Art Is Awesome">
-					<img data-src='https://cdn.myrealgames.com/catalog/cache/catalog/items/728/2048.jpg' title="Art Is Awesome" alt="Art Is Awesome">
-					<p>Art Is Awesome</p>
-				</a>
-			</picture>
-					</div>
-</div>
-<div class="custom_width_block_preview_mid block_category_mid">
-	<div>
-					<picture>
-				<a class="" href="/free-online-games/blackbeards-island" title="Blackbeard's Island">
-					<img data-src='https://cdn.myrealgames.com/catalog/cache/catalog/items/727/2046.jpg' title="Blackbeard's Island" alt="Blackbeard's Island">
-					<p>Blackbeard's Island</p>
-				</a>
-			</picture>
-					</div>
-</div>
-<div class="custom_width_block_preview_mid block_category_mid">
-	<div>
-					<picture>
-				<a class="" href="/free-online-games/1945-kai" title="1945 Kai">
-					<img data-src='https://cdn.myrealgames.com/catalog/cache/catalog/items/676/1944.jpg' title="1945 Kai" alt="1945 Kai">
-					<p>1945 Kai</p>
-				</a>
-			</picture>
-					</div>
-</div>
-<div class="custom_width_block_preview_mid block_category_mid">
-	<div>
-					<picture>
-				<a class="" href="/free-online-games/bavarian-strudel" title="Bavarian Strudel">
-					<img data-src='https://cdn.myrealgames.com/catalog/cache/catalog/items/726/2044.jpg' title="Bavarian Strudel" alt="Bavarian Strudel">
-					<p>Bavarian Strudel</p>
-				</a>
-			</picture>
-					</div>
-</div>
-<div class="custom_width_block_preview_mid block_category_mid">
-	<div>
-					<picture>
-				<a class="" href="/free-online-games/baby-chick-maze" title="Baby Chick Maze">
-					<img data-src='https://cdn.myrealgames.com/catalog/cache/catalog/items/725/2042.jpg' title="Baby Chick Maze" alt="Baby Chick Maze">
-					<p>Baby Chick Maze</p>
-				</a>
-			</picture>
-					</div>
-</div>
-<div class="custom_width_block_preview_mid block_category_mid">
-	<div>
-					<picture>
-				<a class="" href="/free-online-games/wonderland--chapter-5" title="Wonderland - Chapter 5">
-					<img data-src='https://cdn.myrealgames.com/catalog/cache/catalog/items/742/2076.jpg' title="Wonderland - Chapter 5" alt="Wonderland - Chapter 5">
-					<p>Wonderland - Chapter 5</p>
-				</a>
-			</picture>
-					</div>
-</div>
-<div class="custom_width_block_preview_mid block_category_mid">
-	<div>
-					<picture>
-				<a class="" href="/free-online-games/wonderland--chapter-4" title="Wonderland - Chapter 4">
-					<img data-src='https://cdn.myrealgames.com/catalog/cache/catalog/items/740/2072.jpg' title="Wonderland - Chapter 4" alt="Wonderland - Chapter 4">
-					<p>Wonderland - Chapter 4</p>
-				</a>
-			</picture>
-					</div>
-</div>
-<div class="custom_width_block_preview_mid block_category_mid">
-	<div>
-					<picture>
-				<a class="" href="/free-online-games/gta-new-york" title="GTA New York">
-					<img data-src='https://cdn.myrealgames.com/catalog/cache/catalog/items/1163/3973.jpg' title="GTA New York" alt="GTA New York">
-					<p>GTA New York</p>
-				</a>
-			</picture>
-					</div>
-</div>
-<div class="custom_width_block_preview_mid block_category_mid">
-	<div>
-					<picture>
-				<a class="" href="/free-online-games/ufo-run" title="UFO Run">
-					<img data-src='https://cdn.myrealgames.com/catalog/cache/catalog/items/760/2112.jpg' title="UFO Run" alt="UFO Run">
-					<p>UFO Run</p>
-				</a>
-			</picture>
-					</div>
-</div>
-	</div>
-</div>
-			<div class="container block_content_padding block_tops">
-	<div class="container-fluid adWords-bg mobile_ad_correct mt-4 mb-3 responsive_padding">
-	<p class="text-center mb-0 pb-1">Advertisement</p>
-	<table align="center" cellpadding="0" cellspacing="0">
-		<tr>
-			<td>
-				<div class="responsive_ins">
-					<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- home_2 -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-9798851892435037"
-     data-ad-slot="4570240176"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>				</div>
-			</td>
-		</tr>
-	</table>
-</div>
-</div>
-						<div class="container block_content_padding block_tops">
-	<div class="row m-1">
-		<div class="col-12 block_content_title_hover block_content_title_sm p-0">
-							<a>
-					<h2>Best Online Games</h2>
-					<div class="block-border-title"></div>
-				</a>
-					</div>
-	</div>
-	<div class="row m-1 justify-content-center block_category">
-		<div class="custom_width_block_preview_mid block_category_mid">
-	<div>
-					<picture>
-				<a class="" href="/free-online-games/mini-race-rush" title="Mini Race Rush">
-					<img data-src='https://cdn.myrealgames.com/catalog/cache/catalog/items/697/1986.jpg' title="Mini Race Rush" alt="Mini Race Rush">
-					<p>Mini Race Rush</p>
-				</a>
-			</picture>
-					</div>
-</div>
-<div class="custom_width_block_preview_mid block_category_mid">
-	<div>
-					<picture>
-				<a class="" href="/free-online-games/metal-animal" title="Metal Animal">
-					<img data-src='https://cdn.myrealgames.com/catalog/cache/catalog/items/680/1952.jpg' title="Metal Animal" alt="Metal Animal">
-					<p>Metal Animal</p>
-				</a>
-			</picture>
-					</div>
-</div>
-<div class="custom_width_block_preview_mid block_category_mid">
-	<div>
-					<picture>
-				<a class="" href="/free-online-games/klondike-solitaire" title="Klondike Solitaire">
-					<img data-src='https://cdn.myrealgames.com/catalog/cache/catalog/items/721/2034.jpg' title="Klondike Solitaire" alt="Klondike Solitaire">
-					<p>Klondike Solitaire</p>
-				</a>
-			</picture>
-					</div>
-</div>
-<div class="custom_width_block_preview_mid block_category_mid">
-	<div>
-					<picture>
-				<a class="" href="/free-online-games/juicy-dash" title="Juicy Dash">
-					<img data-src='https://cdn.myrealgames.com/catalog/cache/catalog/items/719/2030.jpg' title="Juicy Dash" alt="Juicy Dash">
-					<p>Juicy Dash</p>
-				</a>
-			</picture>
-					</div>
-</div>
-<div class="custom_width_block_preview_mid block_category_mid">
-	<div>
-					<picture>
-				<a class="" href="/free-online-games/art-is-awesome" title="Art Is Awesome">
-					<img data-src='https://cdn.myrealgames.com/catalog/cache/catalog/items/728/2048.jpg' title="Art Is Awesome" alt="Art Is Awesome">
-					<p>Art Is Awesome</p>
-				</a>
-			</picture>
-					</div>
-</div>
-<div class="custom_width_block_preview_mid block_category_mid">
-	<div>
-					<picture>
-				<a class="" href="/free-online-games/1945-kai" title="1945 Kai">
-					<img data-src='https://cdn.myrealgames.com/catalog/cache/catalog/items/676/1944.jpg' title="1945 Kai" alt="1945 Kai">
-					<p>1945 Kai</p>
-				</a>
-			</picture>
-					</div>
-</div>
-<div class="custom_width_block_preview_mid block_category_mid">
-	<div>
-					<picture>
-				<a class="" href="/free-online-games/cooking-marble-cheesecake" title="Cooking: Marble Cheesecake">
-					<img data-src='https://cdn.myrealgames.com/catalog/cache/catalog/items/723/2038.jpg' title="Cooking: Marble Cheesecake" alt="Cooking: Marble Cheesecake">
-					<p>Cooking: Marble Cheesecake</p>
-				</a>
-			</picture>
-					</div>
-</div>
-<div class="custom_width_block_preview_mid block_category_mid">
-	<div>
-					<picture>
-				<a class="" href="/free-online-games/sprint-club-nitro" title="Sprint Club Nitro">
-					<img data-src='https://cdn.myrealgames.com/catalog/cache/catalog/items/759/2110.jpg' title="Sprint Club Nitro" alt="Sprint Club Nitro">
-					<p>Sprint Club Nitro</p>
-				</a>
-			</picture>
-					</div>
-</div>
-<div class="custom_width_block_preview_mid block_category_mid">
-	<div>
-					<picture>
-				<a class="" href="/free-online-games/pop-star-dentist" title="Pop Star Dentist">
-					<img data-src='https://cdn.myrealgames.com/catalog/cache/catalog/items/700/1992.jpg' title="Pop Star Dentist" alt="Pop Star Dentist">
-					<p>Pop Star Dentist</p>
-				</a>
-			</picture>
-					</div>
-</div>
-<div class="custom_width_block_preview_mid block_category_mid">
-	<div>
-					<picture>
-				<a class="" href="/free-online-games/mini-putt-gem-garden" title="Mini Putt Gem Garden">
-					<img data-src='https://cdn.myrealgames.com/catalog/cache/catalog/items/695/1982.jpg' title="Mini Putt Gem Garden" alt="Mini Putt Gem Garden">
-					<p>Mini Putt Gem Garden</p>
-				</a>
-			</picture>
-					</div>
-</div>
-	</div>
-</div>
-			<div class="container block_content_padding block_tops">
-	<div class="container-fluid adWords-bg mobile_ad_correct mt-4 mb-3 responsive_padding">
-	<p class="text-center mb-0 pb-1">Advertisement</p>
-	<table align="center" cellpadding="0" cellspacing="0">
-		<tr>
-			<td>
-				<div class="responsive_ins">
-					<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9798851892435037"
-     crossorigin="anonymous"></script>
-<!-- home_3 -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-9798851892435037"
-     data-ad-slot="4653972240"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>				</div>
-			</td>
-		</tr>
-	</table>
-</div>
-</div>
-	</div>
-		<!-- TEXT BLOCK !-->
-					<div class="container-fluid custom_info_block border-top border-bottom">
-	<div class="container p-4">
-		<div class="footer-text" id="page-description-block" style="display: inherit;">
-			<h1>
-				<span class="icon icon-flag"></span>
-				Games | Full Version Games			</h1>
-			<div class="footer-text-wrapper">
-				<p>Welcome to our world of video games, where everything is possible! Can you picture yourself solving mind-bending puzzles in ancient settings, exploring mystical realms, speeding through neon-lit streets, commanding armies of mythical creatures, or teaming with other players around the globe? In gaming, you&rsquo;re the hero of the story! Overcome all obstacles, experience the thrill of each victory, and create your legend at the press of a button.</p>
-<p>The history of video games spans many years of innovation, evolution, and cultural impact, dating back to the 1950s when the first computers were created. The 1980s brought the classics, and the 2000s ushered in splendid technological advancements. MyRealGames immerses you in modern gaming, characterized by high-definition graphics, free games, and multiple modes in almost all genres.</p>
-<h3>About Our Video Games</h3>
-<p>Our video games, or computer games, are interactive electronic games that require players to use an input device like a keyboard, mouse, touchpad, joystick, or controller to generate visual feedback on a display device. Although these games are often for entertainment and relaxation, they may also be helpful in competitions and computer learning.</p>
-<p>In the game world, players control characters or elements to complete various challenges, tasks, and objectives to progress to the next level. Doing so requires excellent strategy, skills, and even creativity.</p>
-<p>We have online games you can play straight from a web browser and games you can download onto your PC.</p>
-<h4>Online Games</h4>
-<p>This collection covers all the popular games you can play via the internet or computer network on a browser without installing any files or plugins. No sign-up is needed! Unlike retail games that charge you to start playing, our platform offers the top games for free!</p>
-<p>Some of the online game features include:</p>
-<ul>
-<li>Instant gaming</li>
-<li>Multiplayer capabilities</li>
-<li>Character customization</li>
-<li>Regular updates and tweaks</li>
-<li>Cross-platform play</li>
-</ul>
-<h4>Download Games</h4>
-<p>Do you still buy games on platforms like Steam? We bring you the future of gaming! Our platform lets you store all the games you want on your PC by downloading them from our library at no cost!</p>
-<p>Why should you choose MyRealGames to download free games? Our service offers the following:</p>
-<ul>
-<li><strong>No malware or ads</strong>, as we&rsquo;re committed to user security and privacy</li>
-<li><strong>Established reputation </strong>in the gaming industry</li>
-<li><strong>Legit games</strong>, so don&rsquo;t worry about breaking the law with pirated software</li>
-<li><strong>Gaming variety </strong>to quench the thirst of all gamers</li>
-<li><strong>Full-version games </strong>without any time limits or trials</li>
-<li><strong>Easy download: </strong>navigate to the game you want, click &ldquo;Download&rdquo; under the game&rsquo;s icon, wait for the download, and install the files hassle-free</li>
-</ul>
-<h3>Why Should You Play Video Games at MyRealGames?</h3>
-<p>Although doctors caution against excessive screen time, plenty of positive findings prove the benefits of gaming. With direct changes recorded in brain activity, gaming can even help treat mental conditions like ADHD!</p>
-<h4>Increase your brain matter</h4>
-<p>Games impact your brain&rsquo;s ability to change when learning, causing plasticity through rewards and attention control. Since games make you more capable of directing attention toward a specific task, such as maneuvering obstacles to finish a race, they stimulate the brain once you complete the task. The plasticity increases since you&rsquo;ll proceed to other, more challenging levels as the game progresses.</p>
-<p>Video games provide adrenaline, which improves the brain&rsquo;s gray matter, which consists of billions of neurons that regulate emotions, retain memories, and control movement. The more you play, the more your brain adapts!</p>
-<h4>Enjoy a stimulating activity</h4>
-<p>Unlike gluing your eyes to the TV, gaming is an interactive activity requiring attention and management skills. For example, in a role-playing game (RPG), you must complete many quest objectives in a particular order, but there might be even a longer list of side quests in the story. You&rsquo;ll feel a sense of accomplishment when receiving trophies or advancing your character&rsquo;s skills. The constant barrage of reinforcement in gaming exceeds what you might experience in real life.</p>
-<h4>Improve your focus and motor skills</h4>
-<p>Video games are detail-oriented and require constant interaction to accomplish tasks at each level. As such, gamers get to enhance focus because they must pay close attention to the changing visual and audio cues. Besides, you can also develop hand-eye coordination when playing games that require quickly differentiating or matching certain items.</p>
-<p>If you love playing driving games, you can also develop fine motor skills when traversing challenging terrain requiring navigating curvy race tracks at high speeds.</p>
-<h4>Enhance your cognitive functions</h4>
-<p>Multitasking is the ability to handle different tasks simultaneously&mdash;a skill you can acquire or polish through gaming. Furthermore, gaming improves the ability to start a task immediately after completing another (also known as set-shifting), which is essential in today&rsquo;s fast-paced world. You&rsquo;ll enjoy enhanced cognitive functions once you learn to direct attention from one thing to the next and perform various tasks simultaneously.</p>
-<p>For example, you can improve attention by playing action games and increase performance in recognition, perception, and navigation by playing puzzle games.</p>
-<h3>Play Free Games at MyRealGames Now!</h3>
-<p>Are you a video game fan looking for a platform to play free games? Look no further! MyRealGames has a wide selection of top games in every genre, ranging from action and adventure to puzzles, sports, and strategy games. Regardless of your preferences, we&rsquo;ve got you covered! Even better, we regularly add more titles to our popular categories so that you can find something new whenever you visit our platform.</p>
-<p>Thanks to our many licensed full-version games, you don&rsquo;t have to pay for Windows games again. Download any games you like to your PC or play them free from your browser. All our downloaded games are 100% safe, with no viruses, spyware, or in-game ads. All you need to do is download, install, and play! As for our browser games, you don&rsquo;t need to register or sign up for a membership; click and play!</p>														<h3>FAQs:</h3>
-										<h4><h4>What are the main types of video games?</h4>
-</h4><div class="mb-2">
-<p>Video games come in various genres to cater to different preferences and interests among gamers. These genres include action, adventure, puzzle, strategy, simulation, sports, and action-adventure games.</p>
-</div><h4>
-<h4>How much does it cost to play video games?</h4>
-</h4><div class="mb-2">
-<p>Start playing video games on MyRealGames at no cost! Although most games are free, others might require in-game purchases to access premium content, acquire in-game currency, and customize the gaming experience.</p>
-</div><h4>
-<h4>What are the benefits of game-based learning?</h4>
-</h4><div class="mb-2">
-<p>While excessive gaming may have downsides, moderate gaming offers many benefits to players, and some of the educational ones are:</p>
-<ul>
-<li>Revitalizes education because you enjoy lessons as you get to retain information in a fun way</li>
-<li>Boosts motivation by maintaining the interest in learning</li>
-<li>Provides an opportunity to practice, especially when simulating real-life experiences like flight and navigation</li>
-</ul></div>
-					<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"<h4>What are the main types of video games?<\/h4>","acceptedAnswer":{"@type":"Answer","text":"<p>Video games come in various genres to cater to different preferences and interests among gamers. These genres include action, adventure, puzzle, strategy, simulation, sports, and action-adventure games.<\/p>"}},{"@type":"Question","name":"<h4>How much does it cost to play video games?<\/h4>","acceptedAnswer":{"@type":"Answer","text":"<p>Start playing video games on MyRealGames at no cost! Although most games are free, others might require in-game purchases to access premium content, acquire in-game currency, and customize the gaming experience.<\/p>"}},{"@type":"Question","name":"<h4>What are the benefits of game-based learning?<\/h4>","acceptedAnswer":{"@type":"Answer","text":"<p>While excessive gaming may have downsides, moderate gaming offers many benefits to players, and some of the educational ones are:<\/p>\n<ul>\n<li>Revitalizes education because you enjoy lessons as you get to retain information in a fun way<\/li>\n<li>Boosts motivation by maintaining the interest in learning<\/li>\n<li>Provides an opportunity to practice, especially when simulating real-life experiences like flight and navigation<\/li>\n<\/ul>"}}]}</script>							</div>
-		</div>
-	</div>
-</div>
-				<!-- FOOTER !-->
-		<footer class="footer container-fluid px-0">
-	<div class="container child_category_footer">
-					<div class="row m-1">
-				<div class="col-12">
-					<div class="col-6 col-lg-2 col-xl-2 col-sm-2 float-left">						<p><a href="/genres/two-players-games">• 2 Player Games</a></p>
-												<p><a href="/genres/3d-games">• 3D Games</a></p>
-												<p><a href="/genres/addicting-games">• Addicting Games</a></p>
-												<p><a href="/genres/adventure-games">• Adventure Games</a></p>
-												<p><a href="/genres/bmx-games">• BMX Games</a></p>
-												<p><a href="/genres/barbie-dress-up">• Barbie Dress Up</a></p>
-												<p><a href="/genres/barbie-games">• Barbie Games</a></p>
-												<p><a href="/genres/best-games">• Best Games</a></p>
-						</div><div class="col-6 col-lg-2 col-xl-2 col-sm-2 float-left">						<p><a href="/genres/bike-games">• Bike Games</a></p>
-												<p><a href="/genres/brain-games">• Brain Games</a></p>
-												<p><a href="/genres/brain-teasers">• Brain Teasers</a></p>
-												<p><a href="/genres/bubble-shooter">• Bubble Shooter</a></p>
-												<p><a href="/genres/business-games">• Business Games</a></p>
-												<p><a href="/genres/classic-games">• Classic Games</a></p>
-												<p><a href="/genres/cooking-games">• Cooking Games</a></p>
-												<p><a href="/genres/dirt-bike-games">• Dirt Bike Games</a></p>
-						</div><div class="col-6 col-lg-2 col-xl-2 col-sm-2 float-left">						<p><a href="/genres/dress-up-games">• Dress Up Games</a></p>
-												<p><a href="/genres/driving-games">• Driving Games</a></p>
-												<p><a href="/genres/flying-games">• Flying Games</a></p>
-												<p><a href="/genres/football-games">• Football Games</a></p>
-												<p><a href="/genres/free-games">• Free Games</a></p>
-												<p><a href="/genres/free-games-download">• Free Games Download</a></p>
-												<p><a href="/genres/free-pc-games">• Free PC Games</a></p>
-												<p><a href="/genres/fun-games">• Fun Games</a></p>
-						</div><div class="col-6 col-lg-2 col-xl-2 col-sm-2 float-left">						<p><a href="/genres/funny-games">• Funny Games</a></p>
-												<p><a href="/genres/jigsaw-puzzles">• Jigsaw Puzzles</a></p>
-												<p><a href="/genres/logic-games">• Logic Games</a></p>
-												<p><a href="/genres/mahjong-games">• Mahjong Games</a></p>
-												<p><a href="/genres/mind-games">• Mind Games</a></p>
-												<p><a href="/genres/monster-truck-games">• Monster Truck Games</a></p>
-												<p><a href="/genres/multiplayer-games">• Multiplayer Games</a></p>
-												<p><a href="/genres/new-games">• New Games</a></p>
-						</div><div class="col-6 col-lg-2 col-xl-2 col-sm-2 float-left">						<p><a href="/genres/plane-games">• Plane Games</a></p>
-												<p><a href="/genres/pool-games">• Pool Games</a></p>
-												<p><a href="/genres/sniper-games">• Sniper Games</a></p>
-												<p><a href="/genres/solitaire-games">• Solitaire Games</a></p>
-												<p><a href="/genres/strategy-games">• Strategy Games</a></p>
-												<p><a href="/genres/tank-games">• Tank Games</a></p>
-												<p><a href="/genres/top-games">• Top Games</a></p>
-												<p><a href="/genres/tycoon-games">• Tycoon Games</a></p>
-						</div><div class="col-6 col-lg-2 col-xl-2 col-sm-2 float-left">						<p><a href="/genres/war-games">• War Games</a></p>
-												<p><a href="/genres/windows-7-games">• Windows 7 Games</a></p>
-												<p><a href="/genres/windows-8-games">• Windows 8 Games</a></p>
-												<p><a href="/genres/zombie-games">• Zombie Games</a></p>
-						</div>				</div>
-			</div>
-				<div class="container-fluid link_page_footer">
-			<div class="container">
-				<div class="row justify-content-center">
-										<a href="/about-us.html">About Us</a>
-					<!--<a href="/linktous.html">Link to Us</a>!-->
-					<a href="/help.html">Help</a>
-					<a href="/term_of_use.html">Terms of Use</a>
-					<a href="/how-to-uninstall.html">How to Uninstall</a>
-					<a href="/privacy.html">Privacy</a>
-					<a href="/contact.html">Contact</a>
-										<a href="/blog/">Blog</a>
-									</div>
-			</div>
-		</div>
-		<div class="container-fluid social_footer">
-			<div class="container">
-				<div class="row">
-					<div class="col-12">
-						<p>
-							<a style="cursor: pointer;" onclick="saveLang('ja')" href="/jp/"><img src="/../images/flags/ja.png" style="height: 20px;margin-top: 5px;" title="日本語" alt="ja" /></a><a style="cursor: pointer;" onclick="saveLang('ko')" href="/kr/"><img src="/../images/flags/ko.png" style="height: 20px;margin-top: 5px;" title="한국어" alt="ko" /></a><a style="cursor: pointer;" onclick="saveLang('id')" href="/id/"><img src="/../images/flags/id.png" style="height: 20px;margin-top: 5px;" title="Indonesia" alt="id" /></a><a style="cursor: pointer;" onclick="saveLang('hi')" href="/hi/"><img src="/../images/flags/hi.png" style="height: 20px;margin-top: 5px;" title="हिंदी" alt="hi" /></a><a style="cursor: pointer;" onclick="saveLang('sv')" href="/se/"><img src="/../images/flags/sv.png" style="height: 20px;margin-top: 5px;" title="Svenska" alt="sv" /></a><a style="cursor: pointer;" onclick="saveLang('nl')" href="/nl/"><img src="/../images/flags/nl.png" style="height: 20px;margin-top: 5px;" title="Nederlands" alt="nl" /></a><a style="cursor: pointer;" onclick="saveLang('pl')" href="/pl/"><img src="/../images/flags/pl.png" style="height: 20px;margin-top: 5px;" title="Polski" alt="pl" /></a><a style="cursor: pointer;" onclick="saveLang('hu')" href="/hu/"><img src="/../images/flags/hu.png" style="height: 20px;margin-top: 5px;" title="Magyar" alt="hu" /></a><a style="cursor: pointer;" onclick="saveLang('el')" href="/gr/"><img src="/../images/flags/el.png" style="height: 20px;margin-top: 5px;" title="Ελληνικά" alt="el" /></a><a style="cursor: pointer;" onclick="saveLang('cs')" href="/cz/"><img src="/../images/flags/cs.png" style="height: 20px;margin-top: 5px;" title="Čeština" alt="cs" /></a><a style="cursor: pointer;" onclick="saveLang('tr')" href="/tr/"><img src="/../images/flags/tr.png" style="height: 20px;margin-top: 5px;" title="Türkçe" alt="tr" /></a><a style="cursor: pointer;" onclick="saveLang('it')" href="/it/"><img src="/../images/flags/it.png" style="height: 20px;margin-top: 5px;" title="Italiano" alt="it" /></a><a style="cursor: pointer;" onclick="saveLang('es')" href="/es/"><img src="/../images/flags/es.png" style="height: 20px;margin-top: 5px;" title="Español" alt="es" /></a><a style="cursor: pointer;" onclick="saveLang('fr')" href="/fr/"><img src="/../images/flags/fr.png" style="height: 20px;margin-top: 5px;" title="Français" alt="fr" /></a><a style="cursor: pointer;" onclick="saveLang('de')" href="/de/"><img src="/../images/flags/de.png" style="height: 20px;margin-top: 5px;" title="Deutsch" alt="de" /></a><a style="cursor: pointer;" onclick="saveLang('ru')" href="/ru/"><img src="/../images/flags/ru.png" style="height: 20px;margin-top: 5px;" title="Русский" alt="ru" /></a><a style="cursor: pointer;" onclick="saveLang('en')" href="/"><img src="/../images/flags/en.png" style="height: 20px;margin-top: 5px;" title="English" alt="en" /></a>							<a>
-								<span data-download-content="fb_footer" class="icon-fb"></span>
-							</a>
-							<a class="social_footer_rights">© 2026 Fox Games LLC. All Rights Reserved.</a>
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</footer>
-	</div>
-	<script src="https://cdn.myrealgames.com/minify/131abd2f492434bd06957b762d266249e8512eac.js"></script>	<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/8.6.0/lazyload.min.js"></script>
-	<script>
-		$(function() {
-			new LazyLoad({
-				to_webp: true
-			});
-		});
-	</script>
-	<script async data-id="101433225" src="//static.getclicky.com/js"></script>
 </body>
 </html>
