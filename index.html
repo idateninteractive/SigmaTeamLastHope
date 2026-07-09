@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SigmaTeam | Free Games Download</title>
-    <!-- FontAwesome for Search and Social Media Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         /* Base Themes and Reset */
@@ -124,16 +123,19 @@
             transform: translateY(-2px);
         }
 
-        /* Hero Showcase Section */
+        /* Hero Showcase Section with New Image Background and Overlay Mask */
         .hero {
-            padding: 60px 4%;
+            padding: 100px 4%;
             text-align: center;
-            background: radial-gradient(circle at top, #1f293d 0%, #0d1117 70%);
+            background: linear-gradient(rgba(13, 17, 23, 0.75), rgba(13, 17, 23, 0.95)), 
+                        url('https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/33100/page_bg_raw.jpg?t=1773835157') center center / cover no-repeat;
+            border-bottom: 1px solid #21262d;
         }
 
         .hero h1 {
-            font-size: 42px;
-            margin-bottom: 10px;
+            font-size: 46px;
+            margin-bottom: 15px;
+            text-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
         }
 
         .hero h1 span {
@@ -141,15 +143,16 @@
         }
 
         .hero p {
-            color: #8b949e;
-            font-size: 18px;
-            max-width: 600px;
+            color: #c9d1d9;
+            font-size: 19px;
+            max-width: 650px;
             margin: 0 auto;
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
         }
 
         /* Games Grid System */
         .main-container {
-            padding: 20px 4% 60px 4%;
+            padding: 40px 4% 60px 4%;
         }
 
         .section-title {
@@ -253,28 +256,29 @@
             .search-box input:focus {
                 width: 100%;
             }
+            .hero {
+                padding: 60px 4%;
+            }
+            .hero h1 {
+                font-size: 32px;
+            }
         }
     </style>
 </head>
 <body>
 
-    <!-- Header Navigation Section -->
     <header class="navbar">
-        <!-- Left Side: Logo -->
         <div class="nav-logo">
             <div class="logo-icon">Σ</div>
             <div class="logo-text">SigmaTeam</div>
         </div>
 
-        <!-- Right Side Menu (Search Box & Social Options) -->
         <div class="nav-right-group">
-            <!-- Search Bar Component -->
             <div class="search-box">
                 <input type="text" placeholder="Search games...">
                 <i class="fa-solid fa-magnifying-glass"></i>
             </div>
 
-            <!-- Social Media Channels Icons -->
             <div class="social-icons">
                 <a href="#" title="Discord"><i class="fa-brands fa-discord"></i></a>
                 <a href="#" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
@@ -284,19 +288,16 @@
         </div>
     </header>
 
-    <!-- Welcome Headline -->
     <section class="hero">
         <h1>Welcome to <span>SigmaTeam</span></h1>
         <p>Your ultimate hub for premium, high-speed, free game downloads. Secure packages, no speed limits.</p>
     </section>
 
-    <!-- Main Content Body -->
     <main class="main-container">
         <h2 class="section-title">Trending Downloads</h2>
         
         <div class="games-grid">
             
-            <!-- Game Item 1: Alien Shooter 2 The Legend -->
             <div class="game-card">
                 <div class="game-thumbnail" style="background: url('https://staticdelivery.nexusmods.com/mods/4472/images/1/1-1651515566-1441187967.jpeg') center/cover no-repeat;">
                 </div>
@@ -312,7 +313,6 @@
                 </div>
             </div>
 
-            <!-- Game Item 2: Alien Shooter 2 Reloaded -->
             <div class="game-card">
                 <div class="game-thumbnail" style="background: url('https://www.4fnet.org/wp-content/uploads/2026/03/alien-shooter-2-reloaded-vertical.webp') center/cover no-repeat;">
                 </div>
@@ -328,7 +328,6 @@
                 </div>
             </div>
 
-            <!-- Game Item 3: Alien Shooter Vengeance -->
             <div class="game-card">
                 <div class="game-thumbnail" style="background: url('https://cdn.cloudflare.steamstatic.com/steam/apps/6290/header.jpg?t=1661486773') center/cover no-repeat;">
                 </div>
@@ -344,7 +343,6 @@
                 </div>
             </div>
 
-            <!-- Game Item 4: Alien Shooter – Last Hope -->
             <div class="game-card">
                 <div class="game-thumbnail" style="background: url('https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/951530/page_bg_raw.jpg?t=1687441319') center/cover no-repeat;">
                 </div>
@@ -360,7 +358,6 @@
                 </div>
             </div>
 
-            <!-- Game Item 5: Zombie Shooter 2 -->
             <div class="game-card">
                 <div class="game-thumbnail" style="background: url('https://gogunlocked.com/wp-content/uploads/2021/03/Zombie-Shooter-2-Free-Download-639x361.jpg') center/cover no-repeat;">
                 </div>
@@ -376,7 +373,6 @@
                 </div>
             </div>
 
-            <!-- NEW ADDITION: Game Item 6: Project I.G.I.: I'm Going In -->
             <div class="game-card">
                 <div class="game-thumbnail" style="background: url('https://images.steamusercontent.com/ugc/1789597400144228595/FAF9C41B5181F5D170C470E57305C2C061E0A7DC/?imw=512&amp;&amp;ima=fit&amp;impolicy=Letterbox&amp;imcolor=%23000000&amp;letterbox=false') center/cover no-repeat;">
                 </div>
