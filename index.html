@@ -22,7 +22,6 @@
         }
 
         a {
-            text-style: none;
             text-decoration: none;
             color: inherit;
         }
@@ -192,12 +191,6 @@
             position: relative;
         }
 
-        /* Simulated background styles for thumbnails */
-        .thumb-1 { background: linear-gradient(135deg, #ff5e62, #ff9966); }
-        .thumb-2 { background: linear-gradient(135deg, #4286f4, #373b44); }
-        .thumb-3 { background: linear-gradient(135deg, #11998e, #38ef7d); }
-        .thumb-4 { background: linear-gradient(135deg, #7f00ff, #e100ff); }
-
         .game-info {
             padding: 20px;
         }
@@ -206,6 +199,9 @@
             font-size: 18px;
             font-weight: 700;
             margin-bottom: 8px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
 
         .game-meta {
@@ -291,7 +287,7 @@
     <!-- Welcome Headline -->
     <section class="hero">
         <h1>Welcome to <span>SigmaTeam</span></h1>
-        <p>Your ultimate hub for premium, high-speed, free game downloads. Secure packages, no speeds limits.</p>
+        <p>Your ultimate hub for premium, high-speed, free game downloads. Secure packages, no speed limits.</p>
     </section>
 
     <!-- Main Content Body -->
@@ -299,65 +295,71 @@
         <h2 class="section-title">Trending Downloads</h2>
         
         <div class="games-grid">
-            <!-- Game Item 1 -->
+            
+            <!-- Game Item 1: Alien Shooter 2 The Legend -->
             <div class="game-card">
-                <div class="game-thumbnail thumb-1">
-                    <i class="fa-solid fa-gun"></i>
+                <div class="game-thumbnail" style="background: url('https://staticdelivery.nexusmods.com/mods/4472/images/1/1-1651515566-1441187967.jpeg') center/cover no-repeat;">
                 </div>
                 <div class="game-info">
-                    <div class="game-title">Cyber Action 2026</div>
+                    <div class="game-title" title="Alien Shooter 2 The Legend">Alien Shooter 2 The Legend</div>
                     <div class="game-meta">
-                        <span>Action / RPG</span>
+                        <span>Action / RPG [PC]</span>
                         <span class="badge-free">FREE</span>
                     </div>
-                    <a href="#" class="download-btn"><i class="fa-solid fa-download"></i> Download Now</a>
+                    <a href="https://www.4fnet.org/goto/aHR0cHM6Ly9tZWdhdXAubmV0LzJhNTZlZTU2ZjY2YmU0NmQ1ZDIxYjZhMzdkOWJhMjRmL0FsaWVuLlNob290ZXIuMi5UaGUuTGVnZW5kLnYxLjMuMi5yYXI=" class="download-btn" target="_blank">
+                        <i class="fa-solid fa-download"></i> Download Now
+                    </a>
                 </div>
             </div>
 
-            <!-- Game Item 2 -->
+            <!-- Game Item 2: Alien Shooter 2 Reloaded -->
             <div class="game-card">
-                <div class="game-thumbnail thumb-2">
-                    <i class="fa-solid fa-car-burst"></i>
+                <div class="game-thumbnail" style="background: url('https://www.4fnet.org/wp-content/uploads/2026/03/alien-shooter-2-reloaded-vertical.webp') center/cover no-repeat;">
                 </div>
                 <div class="game-info">
-                    <div class="game-title">Velocity Redline</div>
+                    <div class="game-title" title="Alien Shooter 2 Reloaded">Alien Shooter 2 Reloaded</div>
                     <div class="game-meta">
-                        <span>Racing</span>
+                        <span>Action / Shooter [PC]</span>
                         <span class="badge-free">FREE</span>
                     </div>
-                    <a href="#" class="download-btn"><i class="fa-solid fa-download"></i> Download Now</a>
+                    <a href="https://www.4fnet.org/goto/aHR0cHM6Ly9tZWdhdXAubmV0L2QxYTUxMmVmNDgzNjk2NTdhY2FlYTdhYjE3Yjk4MWJkL0FsaWVuU2hvb3QyUmVsb2FkZWRHT0cucmFy" class="download-btn" target="_blank">
+                        <i class="fa-solid fa-download"></i> Download Now
+                    </a>
                 </div>
             </div>
 
-            <!-- Game Item 3 -->
+            <!-- Game Item 3: Alien Shooter Vengeance -->
             <div class="game-card">
-                <div class="game-thumbnail thumb-3">
-                    <i class="fa-solid fa-ghost"></i>
+                <div class="game-thumbnail" style="background: url('https://cdn.cloudflare.steamstatic.com/steam/apps/6290/header.jpg?t=1661486773') center/cover no-repeat;">
                 </div>
                 <div class="game-info">
-                    <div class="game-title">Shadow Realms</div>
+                    <div class="game-title" title="Alien Shooter Vengeance">Alien Shooter Vengeance</div>
                     <div class="game-meta">
-                        <span>Horror / Survival</span>
+                        <span>Isometric / Shooter [PC]</span>
                         <span class="badge-free">FREE</span>
                     </div>
-                    <a href="#" class="download-btn"><i class="fa-solid fa-download"></i> Download Now</a>
+                    <a href="https://www.4fnet.org/goto/aHR0cHM6Ly9waXhlbGRyYWluLmNvbS91L3RLbmRSZ1A5" class="download-btn" target="_blank">
+                        <i class="fa-solid fa-download"></i> Download Now
+                    </a>
                 </div>
             </div>
 
-            <!-- Game Item 4 -->
+            <!-- NEW ADDITION: Game Item 4: Alien Shooter – Last Hope -->
             <div class="game-card">
-                <div class="game-thumbnail thumb-4">
-                    <i class="fa-solid fa-chess"></i>
+                <div class="game-thumbnail" style="background: url('https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/951530/page_bg_raw.jpg?t=1687441319') center/cover no-repeat;">
                 </div>
                 <div class="game-info">
-                    <div class="game-title">Strategy Commander</div>
+                    <div class="game-title" title="Alien Shooter – Last Hope">Alien Shooter – Last Hope</div>
                     <div class="game-meta">
-                        <span>RTS / Strategy</span>
+                        <span>Top-Down / Shooter [PC]</span>
                         <span class="badge-free">FREE</span>
                     </div>
-                    <a href="#" class="download-btn"><i class="fa-solid fa-download"></i> Download Now</a>
+                    <a href="https://www.4fnet.org/goto/aHR0cHM6Ly9waXhlbGRyYWluLmNvbS91L2RpOTk2bnh2" class="download-btn" target="_blank">
+                        <i class="fa-solid fa-download"></i> Download Now
+                    </a>
                 </div>
             </div>
+
         </div>
     </main>
 
