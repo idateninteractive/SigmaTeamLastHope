@@ -6,234 +6,21 @@
     <title>SigmaTeam | Free Games Download</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        /* Base Themes and Reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        body {
-            background-color: #0d1117;
-            color: #ffffff;
-            line-height: 1.6;
-        }
-
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
-
-        /* Header / Navigation Bar */
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #161b22;
-            padding: 15px 4%;
-            border-bottom: 2px solid #21262d;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-
-        /* Left Side: Logo */
-        .nav-logo {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-
-        .logo-img {
-            width: 40px;
-            height: 40px;
-            object-fit: cover;
-            border-radius: 8px;
-        }
-
-        .logo-text {
-            font-size: 22px;
-            font-weight: 800;
-            letter-spacing: 1px;
-            background: linear-gradient(45deg, #fff, #8b949e);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        /* Right Side: Search & Social Group */
-        .nav-right-group {
-            display: flex;
-            align-items: center;
-            gap: 25px;
-        }
-
-        /* Search Option */
-        .search-box {
-            position: relative;
-            display: flex;
-            align-items: center;
-        }
-
-        .search-box input {
-            background-color: #0d1117;
-            border: 1px solid #30363d;
-            color: #fff;
-            padding: 8px 15px;
-            padding-right: 35px;
-            border-radius: 20px;
-            outline: none;
-            width: 200px;
-            transition: all 0.3s ease;
-        }
-
-        .search-box input:focus {
-            border-color: #0066ff;
-            width: 260px;
-            box-shadow: 0 0 8px rgba(0, 102, 255, 0.4);
-        }
-
-        .search-box i {
-            position: absolute;
-            right: 12px;
-            color: #8b949e;
-            cursor: pointer;
-        }
-
-        /* Social Media Options */
-        .social-icons {
-            display: flex;
-            gap: 15px;
-        }
-
-        .social-icons a {
-            font-size: 18px;
-            color: #8b949e;
-            transition: color 0.2s ease, transform 0.2s ease;
-        }
-
-        .social-icons a:hover {
-            color: #00d2ff;
-            transform: translateY(-2px);
-        }
-
-        /* Hero Showcase Section */
-        .hero {
-            padding: 100px 4%;
-            text-align: center;
-            background: linear-gradient(rgba(13, 17, 23, 0.75), rgba(13, 17, 23, 0.95)), 
-                        url('https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/33100/page_bg_raw.jpg?t=1773835157') center center / cover no-repeat;
-            border-bottom: 1px solid #21262d;
-        }
-
-        .hero h1 {
-            font-size: 46px;
-            margin-bottom: 15px;
-            text-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
-        }
-
-        .hero h1 span {
-            color: #00d2ff;
-        }
-
-        .hero p {
-            color: #c9d1d9;
-            font-size: 19px;
-            max-width: 650px;
-            margin: 0 auto;
-            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
-        }
-
-        /* Games Grid System */
-        .main-container {
-            padding: 40px 4% 60px 4%;
-        }
-
-        .section-title {
-            font-size: 24px;
-            margin-bottom: 25px;
-            border-left: 4px solid #0066ff;
-            padding-left: 10px;
-        }
-
-        .games-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: 30px;
-        }
-
-        /* Game Card Styling */
-        .game-card {
-            background-color: #161b22;
-            border: 1px solid #21262d;
-            border-radius: 12px;
-            overflow: hidden;
-            transition: transform 0.3s ease, border-color 0.3s ease;
-        }
-
-        .game-card:hover {
-            transform: translateY(-5px);
-            border-color: #00d2ff;
-        }
-
-        .game-thumbnail {
-            width: 100%;
-            height: 180px;
-            background-color: #30363d;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .game-info {
-            padding: 20px;
-        }
-
-        .game-title {
-            font-size: 18px;
-            font-weight: 700;
-            margin-bottom: 8px;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-
-        .game-meta {
-            display: flex;
-            justify-content: space-between;
-            font-size: 14px;
-            color: #8b949e;
-            margin-bottom: 20px;
-        }
-
-        .badge-free {
-            background-color: rgba(56, 239, 125, 0.2);
-            color: #38ef7d;
-            padding: 2px 8px;
-            border-radius: 4px;
-            font-weight: 600;
-        }
-
-        .download-btn {
-            display: block;
-            text-align: center;
-            background: linear-gradient(45deg, #0066ff, #00d2ff);
-            color: #fff;
-            padding: 10px;
-            border-radius: 6px;
-            font-weight: 600;
-            transition: opacity 0.2s;
-        }
-
-        .download-btn:hover {
-            opacity: 0.9;
-        }
-
-        @media (max-width: 768px) {
-            .navbar { flex-direction: column; gap: 15px; text-align: center; }
-            .nav-right-group { width: 100%; flex-direction: column; gap: 15px; }
-            .search-box input { width: 100%; }
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+        body { background-color: #0d1117; color: #ffffff; }
+        .navbar { display: flex; justify-content: space-between; align-items: center; background-color: #161b22; padding: 15px 4%; border-bottom: 2px solid #21262d; position: sticky; top: 0; z-index: 100; }
+        .nav-logo { display: flex; align-items: center; gap: 12px; }
+        .logo-img { width: 40px; height: 40px; object-fit: cover; border-radius: 8px; }
+        .logo-text { font-size: 22px; font-weight: 800; color: #fff; }
+        .search-box { position: relative; display: flex; align-items: center; }
+        .search-box input { background-color: #0d1117; border: 1px solid #30363d; color: #fff; padding: 8px 15px; border-radius: 20px; outline: none; width: 200px; }
+        .main-container { padding: 40px 4%; }
+        .games-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 30px; }
+        .game-card { background-color: #161b22; border: 1px solid #21262d; border-radius: 12px; overflow: hidden; }
+        .game-thumbnail { width: 100%; height: 180px; background-size: cover; background-position: center; }
+        .game-info { padding: 20px; }
+        .game-title { font-size: 18px; font-weight: 700; margin-bottom: 10px; }
+        .download-btn { display: block; text-align: center; background: linear-gradient(45deg, #0066ff, #00d2ff); color: #fff; padding: 10px; border-radius: 6px; font-weight: 600; text-decoration: none; }
     </style>
 </head>
 <body>
@@ -243,120 +30,87 @@
             <img src="https://archive.org/download/dialog_icon_08_202607/dialog_icon_08.png" alt="SigmaTeam Logo" class="logo-img">
             <div class="logo-text">SigmaTeam</div>
         </div>
-
-        <div class="nav-right-group">
-            <div class="search-box">
-                <input type="text" placeholder="Search games...">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
-
-            <div class="social-icons">
-                <a href="#" title="Discord"><i class="fa-brands fa-discord"></i></a>
-                <a href="#" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
-                <a href="#" title="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a>
-                <a href="#" title="Telegram"><i class="fa-brands fa-telegram"></i></a>
-            </div>
+        <div class="search-box">
+            <input type="text" id="searchInput" onkeyup="searchGames()" placeholder="Search games...">
         </div>
     </header>
 
-    <section class="hero">
-        <h1>Welcome to <span>SigmaTeam</span></h1>
-        <p>Your ultimate hub for premium, high-speed, free game downloads. Secure packages, no speed limits.</p>
-    </section>
-
     <main class="main-container">
-        <h2 class="section-title">Trending Downloads</h2>
-        
-        <div class="games-grid">
+        <div class="games-grid" id="gamesGrid">
+            <!-- Updated: Alien Shooter 2 Conscription -->
             <div class="game-card">
-                <div class="game-thumbnail" style="background: url('https://staticdelivery.nexusmods.com/mods/4472/images/1/1-1651515566-1441187967.jpeg') center/cover no-repeat;"></div>
+                <div class="game-thumbnail" style="background: url('https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/211010/header.jpg?t=1731075169') center/cover;"></div>
                 <div class="game-info">
-                    <div class="game-title" title="Alien Shooter 2 The Legend">Alien Shooter 2 The Legend</div>
-                    <div class="game-meta">
-                        <span>Action / RPG [PC]</span>
-                        <span class="badge-free">FREE</span>
-                    </div>
-                    <a href="https://www.4fnet.org/goto/aHR0cHM6Ly9tZWdhdXAubmV0LzJhNTZlZTU2ZjY2YmU0NmQ1ZDIxYjZhMzdkOWJhMjRmL0FsaWVuLlNob290ZXIuMi5UaGUuTGVnZW5kLnYxLjMuMi5yYXI=" class="download-btn" target="_blank">
-                        <i class="fa-solid fa-download"></i> Download Now
-                    </a>
+                    <div class="game-title">Alien Shooter 2 Conscription</div>
+                    <a href="https://download192.uploadhaven.com/1/application/zip/lTtxkElUvMTSY3P8BsLwf9AnbAB5CRZMUlJyuxGo.zip?key=hmeEyPazifStmIMzYl3gKw&expire=1784026513&filename=Alien.Shooter.2.Conscription.zip" class="download-btn" target="_blank">Download Now</a>
                 </div>
             </div>
-
+            <!-- Alien Shooter: Revisited -->
             <div class="game-card">
-                <div class="game-thumbnail" style="background: url('https://www.4fnet.org/wp-content/uploads/2026/03/alien-shooter-2-reloaded-vertical.webp') center/cover no-repeat;"></div>
+                <div class="game-thumbnail" style="background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2YhG9SP5nfuG5dnLqT4REYsi-kEuawD4v1p17Yv6iVw&s=10') center/cover;"></div>
                 <div class="game-info">
-                    <div class="game-title" title="Alien Shooter 2 Reloaded">Alien Shooter 2 Reloaded</div>
-                    <div class="game-meta">
-                        <span>Action / Shooter [PC]</span>
-                        <span class="badge-free">FREE</span>
-                    </div>
-                    <a href="https://www.4fnet.org/goto/aHR0cHM6Ly9tZWdhdXAubmV0L2QxYTUxMmVmNDgzNjk2NTdhY2FlYTdhYjE3Yjk4MWJkL0FsaWVuU2hvb3QyUmVsb2FkZWRHT0cucmFy" class="download-btn" target="_blank">
-                        <i class="fa-solid fa-download"></i> Download Now
-                    </a>
+                    <div class="game-title">Alien Shooter: Revisited</div>
+                    <a href="https://download.informer.com/win-1191510807-1a1df9-6544fde0-2e2c9f2e59fe7de817-a8ce1dc7a8b1fabeb-5012947902-1124846395/asrevdemo.exe" class="download-btn" target="_blank">Download Now</a>
                 </div>
             </div>
-
+            <!-- Alien Shooter TD -->
             <div class="game-card">
-                <div class="game-thumbnail" style="background: url('https://cdn.cloudflare.steamstatic.com/steam/apps/6290/header.jpg?t=1661486773') center/cover no-repeat;"></div>
+                <div class="game-thumbnail" style="background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqH0qhel7pHgOOd3gNyv4laRGhVl6gqzEKtPxKTDqpu_lXm7ZD9Yna0oxO-I4hOX3xG6dMry--2afN_TnjDHeIRubk8EefFkyXO2I8LQ&s=10') center/cover;"></div>
                 <div class="game-info">
-                    <div class="game-title" title="Alien Shooter Vengeance">Alien Shooter Vengeance</div>
-                    <div class="game-meta">
-                        <span>Isometric / Shooter [PC]</span>
-                        <span class="badge-free">FREE</span>
-                    </div>
-                    <a href="https://www.4fnet.org/goto/aHR0cHM6Ly9waXhlbGRyYWluLmNvbS91L3RLbmRSZ1A5" class="download-btn" target="_blank">
-                        <i class="fa-solid fa-download"></i> Download Now
-                    </a>
+                    <div class="game-title">Alien Shooter TD</div>
+                    <a href="https://mega.nz/file/1DkEEaxb#mzMKHHzibKMwRzy8VRuQmkfOHBhG4QlX5rEt8LzxBOI" class="download-btn" target="_blank">Download Now</a>
                 </div>
             </div>
-
+            <!-- Theseus -->
             <div class="game-card">
-                <div class="game-thumbnail" style="background: url('https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/951530/page_bg_raw.jpg?t=1687441319') center/cover no-repeat;"></div>
+                <div class="game-thumbnail" style="background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMHRLryMNA6Ahby2M9dHndWWrM8rtdBdWNa5E70Jfa9A&s=10') center/cover;"></div>
                 <div class="game-info">
-                    <div class="game-title" title="Alien Shooter – Last Hope">Alien Shooter – Last Hope</div>
-                    <div class="game-meta">
-                        <span>Top-Down / Shooter [PC]</span>
-                        <span class="badge-free">FREE</span>
-                    </div>
-                    <a href="https://www.4fnet.org/goto/aHR0cHM6Ly9waXhlbGRyYWluLmNvbS91L2RpOTk2bnh2" class="download-btn" target="_blank">
-                        <i class="fa-solid fa-download"></i> Download Now
-                    </a>
+                    <div class="game-title">Theseus - Return of the Hero</div>
+                    <a href="https://cdn7.gametop.com/games/Theseus.exe" class="download-btn" target="_blank">Download Now</a>
                 </div>
             </div>
-
+            <!-- Alien Shooter -->
             <div class="game-card">
-                <div class="game-thumbnail" style="background: url('https://gogunlocked.com/wp-content/uploads/2021/03/Zombie-Shooter-2-Free-Download-639x361.jpg') center/cover no-repeat;"></div>
+                <div class="game-thumbnail" style="background: url('https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/33100/header.jpg?t=1773835157') center/cover;"></div>
                 <div class="game-info">
-                    <div class="game-title" title="Zombie Shooter 2">Zombie Shooter 2</div>
-                    <div class="game-meta">
-                        <span>Top-Down / Shooter [PC]</span>
-                        <span class="badge-free">FREE</span>
-                    </div>
-                    <a href="https://www.4fnet.org/goto/aHR0cHM6Ly9waXhlbGRyYWluLmNvbS91L2pBam8yN0Ez" class="download-btn" target="_blank">
-                        <i class="fa-solid fa-download"></i> Download Now
-                    </a>
+                    <div class="game-title">Alien Shooter</div>
+                    <a href="https://www.myrealgames.com/files/alien-shooter.exe" class="download-btn" target="_blank">Download Now</a>
                 </div>
             </div>
-
+            <!-- Alien Shooter 2: Reloaded -->
             <div class="game-card">
-                <div class="game-thumbnail" style="background: url('https://images.steamusercontent.com/ugc/1789597400144228595/FAF9C41B5181F5D170C470E57305C2C061E0A7DC/?imw=512&amp;&amp;ima=fit&amp;impolicy=Letterbox&amp;imcolor=%23000000&amp;letterbox=false') center/cover no-repeat;"></div>
+                <div class="game-thumbnail" style="background: url('https://gogunlocked.com/wp-content/uploads/2021/03/Alien-Shooter-2-Reloaded-Free-Download-639x361.jpg') center/cover;"></div>
                 <div class="game-info">
-                    <div class="game-title" title="Project I.G.I.: I'm Going In">Project I.G.I.: I'm Going In</div>
-                    <div class="game-meta">
-                        <span>Tactical / FPS [PC]</span>
-                        <span class="badge-free">FREE</span>
-                    </div>
-                    <a href="https://ec.ccm2.net/ccm.net/download/files/Project-IGI-Im-Going-In_Win_EN_RIP-Version-1.0.zip" class="download-btn" target="_blank">
-                        <i class="fa-solid fa-download"></i> Download Now
-                    </a>
+                    <div class="game-title">Alien Shooter 2: Reloaded</div>
+                    <a href="https://uploadhaven.com/download/28f14112f449b2484faabf069acbd97c" class="download-btn" target="_blank">Download Now</a>
                 </div>
             </div>
-
+            <!-- IGI 2 -->
+            <div class="game-card">
+                <div class="game-thumbnail" style="background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAqtFZUXKkJ11KyglnwJis8A5qKV85ElJAEWzodZ6AKQ&s=10') center/cover;"></div>
+                <div class="game-info">
+                    <div class="game-title">IGI 2: Covert Strike</div>
+                    <a href="https://94-130-129-111.top/Oceanofgames.com/IGI2.zip?md5=NCPIG0h7yk_sRX3Bxvo14A&expires=1786268466" class="download-btn" target="_blank">Download Now</a>
+                </div>
+            </div>
+            <!-- Remaining -->
+            <div class="game-card"><div class="game-thumbnail" style="background: url('https://staticdelivery.nexusmods.com/mods/4472/images/1/1-1651515566-1441187967.jpeg') center/cover;"></div><div class="game-info"><div class="game-title">Alien Shooter 2 The Legend</div><a href="#" class="download-btn">Download Now</a></div></div>
+            <div class="game-card"><div class="game-thumbnail" style="background: url('https://cdn.cloudflare.steamstatic.com/steam/apps/6290/header.jpg?t=1661486773') center/cover;"></div><div class="game-info"><div class="game-title">Alien Shooter Vengeance</div><a href="#" class="download-btn">Download Now</a></div></div>
+            <div class="game-card"><div class="game-thumbnail" style="background: url('https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/951530/page_bg_raw.jpg?t=1687441319') center/cover;"></div><div class="game-info"><div class="game-title">Alien Shooter – Last Hope</div><a href="#" class="download-btn">Download Now</a></div></div>
+            <div class="game-card"><div class="game-thumbnail" style="background: url('https://gogunlocked.com/wp-content/uploads/2021/03/Zombie-Shooter-2-Free-Download-639x361.jpg') center/cover;"></div><div class="game-info"><div class="game-title">Zombie Shooter 2</div><a href="#" class="download-btn">Download Now</a></div></div>
+            <div class="game-card"><div class="game-thumbnail" style="background: url('https://images.steamusercontent.com/ugc/1789597400144228595/FAF9C41B5181F5D170C470E57305C2C061E0A7DC/?imw=512&amp;&amp;ima=fit&amp;impolicy=Letterbox&amp;imcolor=%23000000&amp;letterbox=false') center/cover;"></div><div class="game-info"><div class="game-title">Project I.G.I.: I'm Going In</div><a href="#" class="download-btn">Download Now</a></div></div>
         </div>
     </main>
 
+    <script>
+        function searchGames() {
+            let input = document.getElementById('searchInput').value.toLowerCase();
+            let cards = document.getElementsByClassName('game-card');
+            for (let i = 0; i < cards.length; i++) {
+                let title = cards[i].querySelector('.game-title').innerText.toLowerCase();
+                cards[i].style.display = title.includes(input) ? "" : "none";
+            }
+        }
+    </script>
 </body>
 </html>
-
- <head></head> <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4497871195162695"
-     crossorigin="anonymous"></script>
