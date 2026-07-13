@@ -2,76 +2,77 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AsTeam | Free Games</title>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
-        body { background-color: #0d1117; color: #ffffff; }
+        body { margin: 0; background-color: #1b2838; font-family: Arial, sans-serif; color: #c6d4df; }
         
-        /* Navbar */
-        .navbar { display: flex; justify-content: space-between; align-items: center; background-color: #161b22; padding: 15px 4%; border-bottom: 2px solid #21262d; }
-        .nav-logo { display: flex; align-items: center; gap: 12px; }
-        .logo-img { width: 40px; height: 40px; border-radius: 8px; }
-        .logo-text { font-size: 22px; font-weight: 800; text-transform: uppercase; }
+        /* Header */
+        .header_wrapper { background-color: #171a21; padding: 20px 0; border-bottom: 2px solid #66c0f4; }
+        .content { max-width: 940px; margin: 0 auto; display: flex; align-items: center; }
+        .logo { font-size: 28px; font-weight: bold; color: #ffffff; margin-right: 40px; }
         
-        .nav-links { display: flex; gap: 25px; }
-        .nav-links a { color: #c9d1d9; text-decoration: none; font-weight: 600; text-transform: uppercase; font-size: 14px; }
-        .nav-links a:hover { color: #00d2ff; }
+        .nav_area { display: flex; align-items: center; gap: 30px; }
+        .nav_links { display: flex; gap: 20px; }
+        .nav_links a { color: #c6d4df; text-decoration: none; text-transform: uppercase; font-size: 14px; font-weight: bold; }
 
-        /* Filter Bar */
-        .filter-bar { padding: 20px 4%; display: flex; align-items: center; gap: 15px; background: #161b22; margin-top: 2px; }
-        .search-box input { background-color: #0d1117; border: 1px solid #30363d; color: #fff; padding: 8px 15px; border-radius: 4px; outline: none; width: 220px; text-transform: uppercase; }
-        
-        .cat-options { display: flex; gap: 10px; }
-        .cat-btn { background-color: #21262d; border: 1px solid #30363d; padding: 8px 15px; color: #fff; border-radius: 4px; cursor: pointer; font-size: 14px; font-weight: 600; text-transform: uppercase; }
-        .cat-btn:hover { background-color: #30363d; }
+        .search_box { display: flex; background-color: #316886; border-radius: 2px; }
+        .search_box input { background: transparent; border: none; padding: 5px 10px; color: white; width: 120px; outline: none; }
+        .search_box button { background: #66c0f4; border: none; padding: 5px 10px; cursor: pointer; color: #171a21; font-weight: bold; }
 
-        .main-container { padding: 40px 4%; }
-        .games-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 30px; }
-        .game-card { background-color: #161b22; border: 1px solid #21262d; border-radius: 8px; overflow: hidden; padding: 15px; }
-        .game-title { font-weight: 700; text-transform: uppercase; }
+        /* Game Grid: Set to show exactly 4 items per row */
+        .game_container { max-width: 940px; margin: 30px auto; }
+        .game_grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+        .game_card { background: #16202d; padding: 10px; border: 1px solid #000; transition: transform 0.2s; }
+        .game_card:hover { transform: scale(1.03); background: #1a293a; cursor: pointer; }
+        .game_img { width: 100%; height: 120px; background: #333; display: flex; align-items: center; justify-content: center; margin-bottom: 10px; color: #66c0f4; }
+        .game_title { font-weight: bold; color: #fff; margin-bottom: 5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        .game_price { color: #66c0f4; font-size: 14px; }
     </style>
 </head>
 <body>
-    <header class="navbar">
-        <div class="nav-logo">
-            <img src="https://archive.org/download/dialog_icon_08_202607/dialog_icon_08.png" alt="Logo" class="logo-img">
-            <div class="logo-text">AsTeam</div>
-        </div>
-        <nav class="nav-links">
-            <a href="#">Store</a>
-            <a href="#">Community</a>
-            <a href="#">About</a>
-            <a href="#">Support</a>
-        </nav>
-    </header>
 
-    <div class="filter-bar">
-        <div class="search-box">
-            <input type="text" id="searchInput" onkeyup="searchGames()" placeholder="SEARCH GAMES...">
-        </div>
-        <div class="cat-options">
-            <button class="cat-btn">Action</button>
-            <button class="cat-btn">Adventure</button>
-            <button class="cat-btn">Strategy</button>
-            <button class="cat-btn">RPG</button>
+    <div class="header_wrapper">
+        <div class="content">
+            <div class="logo">XSTEAM</div>
+            <div class="nav_area">
+                <nav class="nav_links">
+                    <a href="#">Store</a>
+                    <a href="#">Community</a>
+                    <a href="#">About</a>
+                    <a href="#">Support</a>
+                </nav>
+                <div class="search_box">
+                    <input type="text" placeholder="Search...">
+                    <button>🔍</button>
+                </div>
+            </div>
         </div>
     </div>
 
-    <main class="main-container">
-        <div class="games-grid" id="gamesGrid">
+    <div class="game_container">
+        <div class="game_grid">
+            <!-- 4 Game Cards -->
+            <div class="game_card">
+                <div class="game_img">IMG 1</div>
+                <div class="game_title">Cyber Neon Runner</div>
+                <div class="game_price">$19.99</div>
             </div>
-    </main>
+            <div class="game_card">
+                <div class="game_img">IMG 2</div>
+                <div class="game_title">Galactic Conquest</div>
+                <div class="game_price">$29.99</div>
+            </div>
+            <div class="game_card">
+                <div class="game_img">IMG 3</div>
+                <div class="game_title">Mystery of the Void</div>
+                <div class="game_price">$9.99</div>
+            </div>
+            <div class="game_card">
+                <div class="game_img">IMG 4</div>
+                <div class="game_title">Tactical Squad</div>
+                <div class="game_price">$49.99</div>
+            </div>
+        </div>
+    </div>
 
-    <script>
-        function searchGames() {
-            let input = document.getElementById('searchInput').value.toLowerCase();
-            let cards = document.getElementsByClassName('game-card');
-            for (let i = 0; i < cards.length; i++) {
-                let title = cards[i].querySelector('.game-title').innerText.toLowerCase();
-                cards[i].style.display = title.includes(input) ? "" : "none";
-            }
-        }
-    </script>
 </body>
 </html>
