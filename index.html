@@ -17,11 +17,10 @@
         .game_card:hover { transform: scale(1.03); background: #1a293a; }
         .game_img { width: 100%; height: 150px; background-size: cover; background-position: center; margin-bottom: 10px; }
 
-        /* Updated Profile Section */
+        /* Profile Section */
         #profile_section { max-width: 940px; margin: 30px auto; background: #101822; padding: 25px; display: none; border: 1px solid #334455; }
         .profile_layout { display: flex; gap: 30px; margin-bottom: 30px; }
         
-        /* Full size cover image */
         .profile_img { 
             width: 320px; 
             min-height: 400px; 
@@ -34,19 +33,10 @@
         .profile_info { flex: 1; display: flex; flex-direction: column; }
         .profile_info h3 { color: #66c0f4; margin-top: 0; }
         
-        /* Centered Download Button */
-        .btn_container { display: flex; justify-content: center; margin-top: auto; }
-        .buy_btn { 
-            background: #66c0f4; 
-            color: #171a21; 
-            padding: 15px 40px; 
-            text-decoration: none; 
-            font-weight: bold; 
-            text-transform: uppercase; 
-            border: none;
-            cursor: pointer;
-            text-align: center;
-        }
+        /* Centered Image Button */
+        .btn_container { display: flex; justify-content: center; margin-top: auto; padding-top: 20px; }
+        .download_img_btn { cursor: pointer; transition: 0.2s; }
+        .download_img_btn:hover { transform: scale(1.05); }
 
         .video_container { width: 100%; height: 400px; background: #000; margin-top: 20px; }
     </style>
@@ -79,9 +69,11 @@
                 <h3>ABOUT THIS GAME</h3>
                 <p>The year is 2161 and aliens are once again trying to invade Earth. You are a mercenary from the M.A.G.M.A Corporation who is sent to help the United States Army get rid of the plague. So, under the command of General Baker, you take on missions and kill many thousands of aliens in your path.</p>
                 
-                <!-- Centered Button -->
+                <!-- New Image Button -->
                 <div class="btn_container">
-                    <a href="https://www.4fnet.org/goto/aHR0cHM6Ly9waXhlbGRyYWluLmNvbS91L3RLbmRSZ1A5" target="_blank" class="buy_btn">DOWNLOAD</a>
+                    <a href="https://www.4fnet.org/goto/aHR0cHM6Ly9waXhlbGRyYWluLmNvbS91L3RLbmRSZ1A5" target="_blank">
+                        <img src="https://archive.org/download/new-project-1_202607/New%20Project%281%29.png" alt="Download" class="download_img_btn" style="max-width: 280px;">
+                    </a>
                 </div>
             </div>
         </div>
