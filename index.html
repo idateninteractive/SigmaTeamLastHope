@@ -4,29 +4,24 @@
     <meta charset="UTF-8">
     <style>
         body { margin: 0; background-color: #1b2838; font-family: Arial, sans-serif; color: #c6d4df; }
-        
-        /* Header */
         .header_wrapper { background-color: #171a21; padding: 20px 0; border-bottom: 2px solid #66c0f4; }
         .content { max-width: 940px; margin: 0 auto; display: flex; align-items: center; }
         .logo { font-size: 28px; font-weight: bold; color: #ffffff; margin-right: 40px; }
-        .nav_links { display: flex; gap: 20px; }
-        .nav_links a { color: #c6d4df; text-decoration: none; text-transform: uppercase; font-size: 14px; font-weight: bold; }
-
+        
         .game_container { max-width: 940px; margin: 30px auto; }
         .game_grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
         .game_card { background: #16202d; padding: 10px; border: 1px solid #000; cursor: pointer; transition: 0.2s; text-align: center; }
         .game_card:hover { transform: scale(1.03); background: #1a293a; }
         .game_img { width: 100%; height: 100px; background-size: cover; background-position: center; margin-bottom: 10px; }
 
-        /* Profile Section */
         #profile_section { max-width: 940px; margin: 30px auto; background: #101822; padding: 25px; display: none; border: 1px solid #334455; }
         .profile_layout { display: flex; gap: 30px; margin-bottom: 30px; }
-        .profile_img { width: 320px; min-height: 400px; background-size: cover; background-position: center; border: 1px solid #66c0f4; }
+        .profile_img { width: 320px; min-height: 400px; background-size: contain; background-repeat: no-repeat; background-position: center; border: 1px solid #66c0f4; background-color: #000; flex-shrink: 0; }
         .profile_info { flex: 1; display: flex; flex-direction: column; }
-        .profile_info h3 { color: #66c0f4; margin-top: 0; }
-        .btn_container { display: flex; justify-content: center; margin-top: auto; padding-top: 20px; }
+        
+        .video_container { width: 100%; height: 350px; background: #000; margin-bottom: 20px; }
+        .btn_container { display: flex; justify-content: center; padding-top: 10px; }
         .download_img_btn { cursor: pointer; transition: 0.2s; max-width: 280px; }
-        .video_container { width: 100%; height: 400px; background: #000; margin-top: 20px; }
     </style>
 </head>
 <body>
@@ -34,86 +29,48 @@
     <div class="header_wrapper">
         <div class="content">
             <div class="logo">XSTEAM</div>
-            <nav class="nav_links">
-                <a href="#">Store</a><a href="#">Community</a><a href="#">About</a><a href="#">Support</a>
-            </nav>
         </div>
     </div>
 
     <div class="game_container">
         <div class="game_grid">
-            <div class="game_card" onclick="showProfile('asv')">
-                <div class="game_img" style="background-image: url('https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/6290/header.jpg?t=1740580528');"></div>
-                <div class="game_title">Alien Shooter: Vengeance</div>
-            </div>
-            <div class="game_card" onclick="showProfile('zs2')">
-                <div class="game_img" style="background-image: url('https://gogunlocked.com/wp-content/uploads/2021/03/Zombie-Shooter-2-Free-Download.jpg');"></div>
-                <div class="game_title">Zombie Shooter 2</div>
-            </div>
-            <div class="game_card" onclick="showProfile('as2l')">
-                <div class="game_img" style="background-image: url('https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1007400/header.jpg?t=1700734144');"></div>
-                <div class="game_title">Alien Shooter 2: The Legend</div>
-            </div>
-            <div class="game_card" onclick="showProfile('as2r')">
-                <div class="game_img" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt5rUnPw5RPy1XYCqMNks6ibo7vNVDa4qnRGWDkYAQLvM87QIw0sb-TuU&s=10');"></div>
-                <div class="game_title">Alien Shooter 2: Reloaded</div>
-            </div>
+            <div class="game_card" onclick="showProfile('asv')"><div class="game_img" style="background-image: url('https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/6290/header.jpg?t=1740580528');"></div>Alien Shooter: Vengeance</div>
+            <div class="game_card" onclick="showProfile('zs2')"><div class="game_img" style="background-image: url('https://gogunlocked.com/wp-content/uploads/2021/03/Zombie-Shooter-2-Free-Download.jpg');"></div>Zombie Shooter 2</div>
+            <div class="game_card" onclick="showProfile('as2l')"><div class="game_img" style="background-image: url('https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1007400/header.jpg?t=1700734144');"></div>Alien Shooter 2: The Legend</div>
+            <div class="game_card" onclick="showProfile('as2r')"><div class="game_img" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt5rUnPw5RPy1XYCqMNks6ibo7vNVDa4qnRGWDkYAQLvM87QIw0sb-TuU&s=10');"></div>Alien Shooter 2: Reloaded</div>
+            <div class="game_card" onclick="showProfile('aslh')"><div class="game_img" style="background-image: url('https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/951530/capsule_616x353.jpg?t=1687441319');"></div>Alien Shooter – Last Hope</div>
         </div>
     </div>
 
     <div id="profile_section">
+        <h1 id="p_title" style="color: #ffffff; margin-top: 0;"></h1>
         <div class="profile_layout">
             <div id="p_img" class="profile_img"></div>
             <div class="profile_info">
-                <h1 id="p_title"></h1>
-                <h3>ABOUT THIS GAME</h3>
-                <p id="p_desc"></p>
+                <div class="video_container">
+                    <iframe id="p_video" width="100%" height="100%" src="" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <p id="p_desc" style="color: #c6d4df; line-height: 1.6; white-space: pre-line;"></p>
                 <div class="btn_container">
                     <a id="p_link" href="#" target="_blank">
-                        <img src="https://archive.org/download/new-project-1_202607/New%20Project%281%29.png" alt="Download" class="download_img_btn">
+                        <img src="https://archive.org/download/new-project-1_202607/New%20Project%281%29.png" class="download_img_btn">
                     </a>
                 </div>
             </div>
-        </div>
-        <h3>GAMEPLAY VIDEO</h3>
-        <div class="video_container">
-            <iframe id="p_video" width="100%" height="100%" src="" frameborder="0" allowfullscreen></iframe>
         </div>
     </div>
 
     <script>
         const games = {
-            'asv': {
-                title: 'Alien Shooter: Vengeance',
-                desc: 'The year is 2161 and aliens are once again trying to invade Earth. You are a mercenary from the M.A.G.M.A Corporation who is sent to help the United States Army get rid of the plague.',
-                img: 'https://cdn.mobygames.com/covers/4787964-alien-shooter-vengeance-windows-front-cover.jpg',
-                link: 'https://www.4fnet.org/goto/aHR0cHM6Ly9waXhlbGRyYWluLmNvbS91L3RLbmRSZ1A5',
-                video: 'https://www.youtube.com/embed/ACVLiM7OmaI'
-            },
-            'zs2': {
-                title: 'Zombie Shooter 2',
-                desc: 'Zombie Shooter 2 is a unique mix of two genres: action and RPG. Each player can choose a character to his liking, get experience to develop skills and money to spend on weapons, medicines and useful gadgets.',
-                img: 'https://cdn2.steamgriddb.com/grid/8b335fa0f1f44814d43a9f6560794acd.png',
-                link: 'https://www.4fnet.org/goto/aHR0cHM6Ly9waXhlbGRyYWluLmNvbS91L2pBam8yN0Ez',
-                video: 'https://www.youtube.com/embed/YhMCWhnABN8'
-            },
-            'as2l': {
-                title: 'Alien Shooter 2: The Legend',
-                desc: 'Alien Shooter 2 The Legend is a fast-paced top-down action shooter that expands the intense combat style of the Alien Shooter series with larger environments and massive enemy swarms. Players enter a desperate global war against a rapidly spreading alien invasion where survival depends on mobility, firepower, and tactical awareness.',
-                img: 'https://cdn2.steamgriddb.com/grid/8aafbec485367229542990511bafc0b5.png',
-                link: 'https://www.4fnet.org/goto/aHR0cHM6Ly9tZWdhdXAubmV0LzJhNTZlZTU2ZjY2YmU0NmQ1ZDIxYjZhMzdkOWJhMjRmL0FsaWVuLlNob290ZXIuMi5UaGUuTGVnZW5kLnYxLjMuMi5yYXI=',
-                video: 'https://www.youtube.com/embed/iiiLRqRVgbA'
-            },
-            'as2r': {
-                title: 'Alien Shooter 2: Reloaded',
-                desc: 'Alien Shooter 2 Reloaded is an intense top-down action shooter that expands the scale and systems of the original Alien Shooter formula. Built around large-scale battles against overwhelming alien swarms, the game blends arcade shooting with light RPG progression, allowing players to customize equipment, upgrade skills, and experiment with a wide arsenal of weapons.',
-                img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVxaxvDT3IN0n1Wi0s0fgnr1MDpsqdHQ2v6KezP8h9eC4sa_mb2OGu1-6R&s=10',
-                link: 'https://www.4fnet.org/goto/aHR0cHM6Ly9tZWdhdXAubmV0L2QxYTUxMmVmNDgzNjk2NTdhY2FlYTdhYjE3Yjk4MWJkL0FsaWVuU2hvb3QyUmVsb2FkZWRHT0cucmFy',
-                video: 'https://www.youtube.com/embed/x9o284YDetQ'
-            }
+            'asv': { title: 'Alien Shooter: Vengeance', desc: 'The year is 2161 and aliens are once again trying to invade Earth. You are a mercenary from the M.A.G.M.A Corporation who is sent to help the United States Army get rid of the plague. So, under the command of General Baker, you take on missions and kill many thousands of aliens in your path.', img: 'https://cdn.mobygames.com/covers/4787964-alien-shooter-vengeance-windows-front-cover.jpg', link: 'https://www.4fnet.org/goto/aHR0cHM6Ly9waXhlbGRyYWluLmNvbS91L3RLbmRSZ1A5', video: 'https://www.youtube.com/embed/ACVLiM7OmaI' },
+            'zs2': { title: 'Zombie Shooter 2', desc: 'Zombie Shooter 2 is a unique mix of two genres: action and RPG. Each player can choose a character to his liking, get experience to develop skills and money to spend on weapons, medicines and useful gadgets. All this will be used against thousands of enemies. Zombies fill the screen without letting you rest for a minute. A new project from the creator of the legendary Alien Shooter saga. Crowd of enemies: more than 100 simultaneous zombies on one map. Possibility of improving the parameters of the protagonist. More than 60 types of weapons, including sniper rifles. Lots of auxiliary devices, including radar and combat drones. Various types of vehicles to drive. Three game modes: Campaign, Survival and Shooting Post.', img: 'https://cdn2.steamgriddb.com/grid/8b335fa0f1f44814d43a9f6560794acd.png', link: 'https://www.4fnet.org/goto/aHR0cHM6Ly9waXhlbGRyYWluLmNvbS91L2pBam8yN0Ez', video: 'https://www.youtube.com/embed/YhMCWhnABN8' },
+            'as2l': { title: 'Alien Shooter 2: The Legend', desc: 'Alien Shooter 2 The Legend is a fast-paced top-down action shooter that expands the intense combat style of the Alien Shooter series with larger environments and massive enemy swarms. Players enter a desperate global war against a rapidly spreading alien invasion where survival depends on mobility, firepower, and tactical awareness. The gameplay combines arcade shooting with light RPG progression, allowing characters to upgrade abilities, equip stronger armor, and access advanced weapons. Battles often place hundreds of enemies on screen, creating constant pressure and chaotic firefights. Its dark atmosphere, explosive weapon systems, and continuous character development build a relentless survival experience focused on endurance, strategic positioning, and overwhelming alien threats.', img: 'https://cdn2.steamgriddb.com/grid/8aafbec485367229542990511bafc0b5.png', link: 'https://www.4fnet.org/goto/aHR0cHM6Ly9tZWdhdXAubmV0LzJhNTZlZTU2ZjY2YmU0NmQ1ZDIxYjZhMzdkOWJhMjRmL0FsaWVuLlNob290ZXIuMi5UaGUuTGVnZW5kLnYxLjMuMi5yYXI=', video: 'https://www.youtube.com/embed/iiiLRqRVgbA' },
+            'as2r': { title: 'Alien Shooter 2: Reloaded', desc: 'Alien Shooter 2 Reloaded is an intense top-down action shooter that expands the scale and systems of the original Alien Shooter formula. Built around large-scale battles against overwhelming alien swarms, the game blends arcade shooting with light RPG progression, allowing players to customize equipment, upgrade skills, and experiment with a wide arsenal of weapons. Missions emphasize constant movement, crowd control, and resource management as hundreds of enemies flood the battlefield simultaneously. The Reloaded edition refines balance, pacing, and progression while preserving the series’ signature chaotic combat loop. For PC players who enjoy relentless action, character upgrades, and strategic weapon choices, Alien Shooter 2 Reloaded delivers a fast, tactical experience centered on survival against escalating extraterrestrial threats.', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVxaxvDT3IN0n1Wi0s0fgnr1MDpsqdHQ2v6KezP8h9eC4sa_mb2OGu1-6R&s=10', link: 'https://www.4fnet.org/goto/aHR0cHM6Ly9tZWdhdXAubmV0L2QxYTUxMmVmNDgzNjk2NTdhY2FlYTdhYjE3Yjk4MWJkL0FsaWVuU2hvb3QyUmVsb2FkZWRHT0cucmFy', video: 'https://www.youtube.com/embed/x9o284YDetQ' },
+            'aslh': { title: 'Alien Shooter – Last Hope', desc: 'The war with monster invasion is on.\n\nThe Opposition Force has almost run out of resources.\n\nThe number of those worthy of battle decreases every day.\nOne of the research laboratories manages to create the ready weapon to strengthen the Opposition and radically change the course of the war…\nYou have to enter the research center, find a new weapon and upgrade it directly on the battlefield.', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCZZnY9mjgser5R6WcFyBve0i7_JeRqFMIBvS1DotZtk7NrS3bTtUhEz4&s=10', link: 'https://www.4fnet.org/goto/aHR0cHM6Ly9waXhlbGRyYWluLmNvbS91L2RpOTk2bnh2', video: 'https://www.youtube.com/embed/rbexTPNjWlY' }
         };
 
         function showProfile(id) {
+            const profile = document.getElementById('profile_section');
             const g = games[id];
             if (!g) return;
             document.getElementById('p_title').innerText = g.title;
@@ -121,9 +78,8 @@
             document.getElementById('p_img').style.backgroundImage = 'url("' + g.img + '")';
             document.getElementById('p_link').href = g.link;
             document.getElementById('p_video').src = g.video;
-            
-            document.getElementById('profile_section').style.display = 'block';
-            document.getElementById('profile_section').scrollIntoView({ behavior: 'smooth' });
+            profile.style.display = 'block';
+            profile.scrollIntoView({ behavior: 'smooth' });
         }
     </script>
 </body>
